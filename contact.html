@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Engage RMC Engineers &amp; Karachi HQ Directory | Risk Management Consultants (RMC)</title>
+  <meta name="description" content="Submit an EHS audit, wastewater treatment (ETP/STP), fire protection RFP, or urgent post-fire incident investigation request to Risk Management Consultants (RMC) in Saddar, Karachi.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="expect" href="#main-content" blocking="render">
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a class="site-logo" href="index.html" aria-label="Risk Management Consultants (RMC) — Home">
+        <svg class="rmc-mark" width="38" height="38" viewBox="0 0 40 40" aria-hidden="true">
+          <rect x="1" y="1" width="38" height="38" rx="4" fill="#FFFFFF" stroke="#0F223D" stroke-width="1.5"/>
+          <polygon points="20,6 32,16 27,16 20,10.5 13,16 8,16" fill="#0F223D"/>
+          <polygon points="20,13 29,20 24,20 20,16.8 16,20 11,20" fill="#E88D14"/>
+          <polygon points="20,34 32,24 27,24 20,29.5 13,24 8,24" fill="#0F223D"/>
+          <polygon points="20,27 29,20 24,20 20,23.2 16,20 11,20" fill="#F5A623"/>
+        </svg>
+        <span class="site-logo-text">
+          <strong class="site-logo-abbr">RMC</strong>
+          <span class="site-logo-sub">Risk Management Consultants</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <button
+          class="menu-button"
+          type="button"
+          popovertarget="site-menu"
+          popovertargetaction="toggle"
+          aria-controls="site-menu"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+          <span>Menu</span>
+        </button>
+
+        <ul id="site-menu" class="site-menu" popover="auto">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="about.html">About RMC</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li class="site-menu-cta">
+            <button
+              type="button"
+              class="btn btn--primary btn--sm"
+              command="show-modal"
+              commandfor="consultation-modal"
+              data-open-consultation
+            >
+              Request EHS Audit
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Band 1: Page Hero -->
+    <section class="band band--navy">
+      <div class="container">
+        <div class="stack-md">
+          <p class="eyebrow">Karachi HQ · Direct Engineering Dispatch</p>
+          <h1 class="display-title">Engage <span class="serif-accent">RMC Engineers</span></h1>
+          <p class="lead">
+            Submit a structured site survey or engineering RFP below, or reach our Saddar Karachi advisory desk
+            directly on <strong>0316-9043273</strong>, <strong>0316-9043272</strong>, or <strong>0323-3963928</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Band 2: 2-Column RFP Form & Karachi HQ Directory -->
+    <section class="band band--surface">
+      <div class="container">
+        <div class="asymmetric-grid">
+          <!-- Left Column: Validated RFP / Audit Form -->
+          <div class="contact-card">
+            <div class="section-header">
+              <p class="eyebrow">Request for Proposal &amp; Site Survey</p>
+              <h2 id="rfp-form-title">Engineering &amp; EHS Inquiry Portal</h2>
+              <p>
+                Required fields are marked with <code>*</code>. Provide your facility zone and operational brief so the
+                appropriate principal lead reviews your request.
+              </p>
+            </div>
+
+            <form
+              id="contact-rfp-form"
+              class="rmc-form"
+              method="post"
+              action="contact.html#submitted"
+              aria-labelledby="rfp-form-title"
+              novalidate
+            >
+              <div class="rmc-form-grid">
+                <div class="field-group">
+                  <label for="rfp-name">Full Name <span aria-hidden="true">*</span></label>
+                  <input
+                    id="rfp-name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    enterkeyhint="next"
+                    aria-invalid="false"
+                    data-error="rfp-name-err"
+                    required
+                  >
+                  <span class="field-error" id="rfp-name-err" hidden>
+                    <span class="visually-hidden">Error: </span>Please enter your full name.
+                  </span>
+                </div>
+
+                <div class="field-group">
+                  <label for="rfp-company">Company / Facility Name <span aria-hidden="true">*</span></label>
+                  <input
+                    id="rfp-company"
+                    name="company"
+                    type="text"
+                    autocomplete="organization"
+                    enterkeyhint="next"
+                    aria-invalid="false"
+                    data-error="rfp-company-err"
+                    required
+                  >
+                  <span class="field-error" id="rfp-company-err" hidden>
+                    <span class="visually-hidden">Error: </span>Please enter your organization or plant name.
+                  </span>
+                </div>
+
+                <div class="field-group">
+                  <label for="rfp-email">Work Email <span aria-hidden="true">*</span></label>
+                  <span class="field-hint" id="rfp-email-hint">Format: engineer@company.com.pk</span>
+                  <input
+                    id="rfp-email"
+                    name="email"
+                    type="email"
+                    inputmode="email"
+                    autocomplete="email"
+                    autocorrect="off"
+                    autocapitalize="none"
+                    spellcheck="false"
+                    enterkeyhint="next"
+                    aria-describedby="rfp-email-hint"
+                    aria-invalid="false"
+                    data-error="rfp-email-err"
+                    required
+                  >
+                  <span class="field-error" id="rfp-email-err" hidden>
+                    <span class="visually-hidden">Error: </span>Enter a valid work email address.
+                  </span>
+                </div>
+
+                <div class="field-group">
+                  <label for="rfp-phone">Phone / WhatsApp <span aria-hidden="true">*</span></label>
+                  <span class="field-hint" id="rfp-phone-hint">Format: +92 3XX XXXXXXX or 03XX-XXXXXXX</span>
+                  <input
+                    id="rfp-phone"
+                    name="phone"
+                    type="tel"
+                    inputmode="tel"
+                    autocomplete="tel"
+                    enterkeyhint="next"
+                    aria-describedby="rfp-phone-hint"
+                    aria-invalid="false"
+                    data-error="rfp-phone-err"
+                    required
+                  >
+                  <span class="field-error" id="rfp-phone-err" hidden>
+                    <span class="visually-hidden">Error: </span>Provide a valid phone or WhatsApp number.
+                  </span>
+                </div>
+              </div>
+
+              <div class="rmc-form-grid">
+                <div class="field-group">
+                  <label for="rfp-zone">Industrial Zone / City <span aria-hidden="true">*</span></label>
+                  <span class="field-hint" id="rfp-zone-hint">Select or type your estate (e.g., S.I.T.E., Korangi, Port Qasim)</span>
+                  <input
+                    id="rfp-zone"
+                    name="zone"
+                    type="text"
+                    list="pk-industrial-zones"
+                    enterkeyhint="next"
+                    aria-describedby="rfp-zone-hint"
+                    aria-invalid="false"
+                    data-error="rfp-zone-err"
+                    required
+                  >
+                  <datalist id="pk-industrial-zones">
+                    <option value="S.I.T.E. Industrial Area, Karachi"></option>
+                    <option value="Korangi Industrial Area &amp; KCIP, Karachi"></option>
+                    <option value="Landhi Industrial Area, Karachi"></option>
+                    <option value="Port Qasim / Bin Qasim Industrial Park, Karachi"></option>
+                    <option value="Federal B. Area, Karachi"></option>
+                    <option value="Nooriabad Industrial Estate, Sindh"></option>
+                    <option value="Hub Industrial Estate, Balochistan"></option>
+                    <option value="Lahore / Sundar / Sheikhupura"></option>
+                    <option value="Faisalabad Industrial Corridor"></option>
+                    <option value="Islamabad / Rawalpindi / Hattar"></option>
+                  </datalist>
+                  <span class="field-error" id="rfp-zone-err" hidden>
+                    <span class="visually-hidden">Error: </span>Please specify the facility estate or city.
+                  </span>
+                </div>
+
+                <div class="field-group">
+                  <label for="rfp-scale">Estimated Site Scale / Effluent Flow</label>
+                  <span class="field-hint" id="rfp-scale-hint">Optional: helps size hydraulic or audit resources</span>
+                  <select id="rfp-scale" name="scale" aria-describedby="rfp-scale-hint" aria-invalid="false">
+                    <option value="" selected>Select approximate facility scale…</option>
+                    <option value="small">Under 25,000 sq.ft / Under 50 m&sup3;/day</option>
+                    <option value="medium">25,000 – 100,000 sq.ft / 50 – 250 m&sup3;/day</option>
+                    <option value="large">Over 100,000 sq.ft / Over 250 m&sup3;/day</option>
+                    <option value="multi">Multi-Facility / Industrial Estate Portfolio</option>
+                  </select>
+                </div>
+              </div>
+
+              <fieldset class="stack-sm">
+                <legend>Engineering &amp; EHS Practice Areas Needed</legend>
+                <div class="checkbox-grid">
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="rfp-prac-audits" name="practices" value="ehs-audits">
+                    <label for="rfp-prac-audits">EHS Audits &amp; Safety / Fire Gap Assessments</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="rfp-prac-systems" name="practices" value="ehs-systems">
+                    <label for="rfp-prac-systems">EHS Systems (ISO 45001/14001) &amp; Training</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="rfp-prac-wastewater" name="practices" value="wastewater">
+                    <label for="rfp-prac-wastewater">Wastewater Treatment (ETP/STP) &amp; Water Recycling</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="rfp-prac-suppression" name="practices" value="fire-suppression">
+                    <label for="rfp-prac-suppression">Fire Hydrant &amp; Automatic Suppression Systems</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="rfp-prac-detection" name="practices" value="fire-detection">
+                    <label for="rfp-prac-detection">Fire Detection &amp; Addressable Alarm Systems</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="rfp-prac-forensics" name="practices" value="fire-investigation">
+                    <label for="rfp-prac-forensics">Fire Incident Investigation &amp; Origin Forensics</label>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="field-group">
+                <label for="rfp-brief">Project Scope, Effluent Load, or Urgency Brief <span aria-hidden="true">*</span></label>
+                <span class="field-hint" id="rfp-brief-hint">Describe current plant status, target compliance deadline (SEPA/buyer/NOC), or incident timeline.</span>
+                <textarea
+                  id="rfp-brief"
+                  name="brief"
+                  rows="4"
+                  aria-describedby="rfp-brief-hint"
+                  aria-invalid="false"
+                  data-error="rfp-brief-err"
+                  required
+                ></textarea>
+                <span class="field-error" id="rfp-brief-err" hidden>
+                  <span class="visually-hidden">Error: </span>Please summarize your engineering or audit requirement.
+                </span>
+              </div>
+
+              <fieldset class="stack-sm">
+                <legend>Preferred Response Channel</legend>
+                <div class="choice-list">
+                  <div class="choice-option">
+                    <input type="radio" id="rfp-chan-phone" name="channel" value="phone" checked>
+                    <label for="rfp-chan-phone">Phone Call</label>
+                  </div>
+                  <div class="choice-option">
+                    <input type="radio" id="rfp-chan-whatsapp" name="channel" value="whatsapp">
+                    <label for="rfp-chan-whatsapp">WhatsApp</label>
+                  </div>
+                  <div class="choice-option">
+                    <input type="radio" id="rfp-chan-email" name="channel" value="email">
+                    <label for="rfp-chan-email">Email</label>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="btn-group">
+                <button type="submit" class="btn btn--primary">Submit Engineering Inquiry</button>
+              </div>
+
+              <div class="form-status" role="status" aria-live="polite" hidden></div>
+            </form>
+          </div>
+
+          <!-- Right Column: Verified Karachi HQ Directory & Post-Fire Notice -->
+          <aside class="stack-lg" aria-label="Karachi Headquarters and Emergency Dispatch">
+            <div class="hq-directory">
+              <div class="stack-sm">
+                <p class="eyebrow">Verified Office Directory</p>
+                <h2>Karachi Headquarters</h2>
+                <address class="stack-sm">
+                  <strong>Risk Management Consultants (RMC)</strong>
+                  <span>Office M-1, Fareed Chambers, Abdullah Haroon Road, Saddar, Karachi, Sindh 74400, Pakistan</span>
+                </address>
+              </div>
+
+              <div class="stack-sm">
+                <h3>Direct Engineering Lines</h3>
+                <ul class="phone-list">
+                  <li><a class="phone-link" href="tel:+923169043273"><span>Call Primary Desk</span><span>0316-9043273</span></a></li>
+                  <li><a class="phone-link" href="tel:+923169043272"><span>Call Technical Desk</span><span>0316-9043272</span></a></li>
+                  <li><a class="phone-link" href="tel:+923233963928"><span>Call Operations Desk</span><span>0323-3963928</span></a></li>
+                </ul>
+              </div>
+
+              <dl class="spec-sheet">
+                <div class="spec-row">
+                  <dt>Office Hours</dt>
+                  <dd>Monday – Saturday · 09:00 – 18:00 PKT</dd>
+                </div>
+                <div class="spec-row">
+                  <dt>LinkedIn Profile</dt>
+                  <dd>
+                    <a
+                      class="btn btn--ghost btn--sm"
+                      href="https://pk.linkedin.com/company/risk-management-consultants-rmc"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Risk Management Consultants on LinkedIn
+                    </a>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="emergency-callout" role="note" aria-labelledby="emergency-fire-title">
+              <p class="eyebrow">Urgent Post-Incident Protocol · NFPA 921</p>
+              <h3 id="emergency-fire-title">Emergency Post-Fire Investigation Notice</h3>
+              <p>
+                <em>"Find the Cause. Prevent the Next."</em> — Immediately after extinguishing a plant or warehouse fire,
+                <strong>isolate electrical power safely, restrict non-essential cleanup, and preserve distribution panels,
+                cabling, and debris burn patterns</strong> before disturbance.
+              </p>
+              <p>
+                Premature debris clearing destroys primary vs. secondary arc-mapping evidence. Call
+                <a href="tel:+923169043273">0316-9043273</a> or <a href="tel:+923169043272">0316-9043272</a> immediately
+                for rapid scene preservation and forensic mobilization.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Band 3: Pre-Consultation Preparation Accordion -->
+    <section class="band band--tinted">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Accelerate Your Site Visit</p>
+          <h2 id="contact-prep-title">Pre-Consultation Preparation Guide</h2>
+          <p>
+            Having these operational records ready allows RMC's principal engineers to deliver sharper feasibility
+            estimates and commissioning schedules during the initial survey.
+          </p>
+        </div>
+
+        <section class="accordion-group" aria-labelledby="contact-prep-title">
+          <details name="contact-prep" open>
+            <summary>Fire Hydrant, Suppression &amp; Addressable Alarm Projects (NFPA 13 / 20 / 72)</summary>
+            <div class="accordion-body">
+              <p>
+                Prepare architectural floor layouts or CAD site plans showing total covered area, building height,
+                occupancy hazard classification (textile storage, solvent room, high-rise office), existing municipal or
+                bore-water reservoir capacity, and any prior SBCA or Civil Defence inspection notes.
+              </p>
+            </div>
+          </details>
+
+          <details name="contact-prep">
+            <summary>Wastewater Treatment (ETP / STP) &amp; Water Recycling Plants (SEPA / SEQS)</summary>
+            <div class="accordion-body">
+              <p>
+                Gather recent grab or 24-hour composite raw effluent lab reports (pH, BOD₅, COD, TSS, TDS, color, oil &amp;
+                grease), peak daily discharge volume (m³/day), production process chemicals or dye classes, and the
+                available ground footprint for civil tankage and UF/RO skids.
+              </p>
+            </div>
+          </details>
+
+          <details name="contact-prep">
+            <summary>EHS Audits, Fire Gap Assessments &amp; ISO 45001 / 14001 Systems</summary>
+            <div class="accordion-body">
+              <p>
+                Keep existing safety policies, chemical inventory / SDS binders, past buyer CAPA lists (amfori BSCI,
+                WRAP, ZDHC), headcount per shift, and prior fire drill or equipment maintenance logs ready for our
+                gap baseline review.
+              </p>
+            </div>
+          </details>
+
+          <details name="contact-prep">
+            <summary>Post-Fire Incident Investigation &amp; Scene Preservation (NFPA 921)</summary>
+            <div class="accordion-body">
+              <p>
+                Secure perimeter access, preserve untouched electrical switchboards and tripped breakers, retain CCTV or
+                FACP event logs from before the incident, and prepare a witness roster (security, shift supervisors,
+                maintenance electricians) for structured forensic interviews.
+              </p>
+            </div>
+          </details>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer band band--navy">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-title">Risk Management Consultants (RMC)</p>
+          <p class="footer-tagline">For All EHS Solutions — <em>Safer Today | Stronger Tomorrow</em></p>
+          <p class="footer-desc">
+            Established in 2016 in Karachi, Pakistan. Delivering EHS audits, management systems,
+            wastewater treatment &amp; recycling plants, turnkey fire protection systems, and forensic fire investigations.
+          </p>
+        </div>
+
+        <nav class="footer-col" aria-label="Engineering Practices">
+          <h2 class="footer-heading">Practices</h2>
+          <ul class="footer-links">
+            <li><a href="services.html#ehs-audits">EHS &amp; Fire Gap Audits</a></li>
+            <li><a href="services.html#ehs-systems-training">EHS Systems &amp; Trainings</a></li>
+            <li><a href="services.html#wastewater-recycling">WWTP / ETP &amp; Water Recycling</a></li>
+            <li><a href="services.html#fire-hydrant-suppression">Fire Hydrant &amp; Suppression</a></li>
+            <li><a href="services.html#fire-detection-alarm">Fire Detection &amp; Alarms</a></li>
+            <li><a href="services.html#fire-investigation">Fire Incident Investigation</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Company Navigation">
+          <h2 class="footer-heading">Company</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Executive Overview</a></li>
+            <li><a href="case-studies.html">Project Benchmarks</a></li>
+            <li><a href="about.html">About &amp; Governance</a></li>
+            <li><a href="contact.html">Request Site Survey / RFP</a></li>
+            <li><a href="https://pk.linkedin.com/company/risk-management-consultants-rmc" target="_blank" rel="noopener noreferrer">LinkedIn Company Profile</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Karachi Headquarters</h2>
+          <address class="footer-address">
+            Office M-1, Fareed Chambers<br>
+            Abdullah Haroon Road, Saddar<br>
+            Karachi, Sindh 74400, Pakistan
+          </address>
+          <ul class="footer-phones">
+            <li><a href="tel:+923169043273">0316-9043273</a></li>
+            <li><a href="tel:+923169043272">0316-9043272</a></li>
+            <li><a href="tel:+923233963928">0323-3963928</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Risk Management Consultants (RMC). All rights reserved.</p>
+        <p class="footer-standards">Aligned with ISO 45001 · ISO 14001 · NFPA 13/20/72/921 · BCP Fire Safety Provisions 2016 · SEPA / SEQS</p>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="consultation-modal" class="rmc-dialog" closedby="any" aria-labelledby="consultation-modal-title">
+    <div class="rmc-dialog-shell">
+      <div class="rmc-dialog-header">
+        <div>
+          <p class="eyebrow">Karachi HQ · Nationwide Dispatch</p>
+          <h2 id="consultation-modal-title">Schedule an Engineering &amp; EHS Consultation</h2>
+        </div>
+        <form method="dialog">
+          <button type="submit" value="close" class="btn-icon" aria-label="Close consultation dialog">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M18 6 6 18M6 6l12 12"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <form id="consultation-modal-form" class="rmc-form" method="post" action="contact.html#submitted" novalidate>
+        <div class="rmc-form-grid">
+          <div class="field-group">
+            <label for="modal-name">Full Name <span aria-hidden="true">*</span></label>
+            <input id="modal-name" name="name" type="text" autocomplete="name" required autofocus>
+            <span class="field-error" id="modal-name-err" hidden>Please enter your full name.</span>
+          </div>
+
+          <div class="field-group">
+            <label for="modal-company">Organization / Facility <span aria-hidden="true">*</span></label>
+            <input id="modal-company" name="company" type="text" autocomplete="organization" required>
+            <span class="field-error" id="modal-company-err" hidden>Please enter your company or plant name.</span>
+          </div>
+
+          <div class="field-group">
+            <label for="modal-phone">Phone / WhatsApp <span aria-hidden="true">*</span></label>
+            <span class="field-hint" id="modal-phone-hint">Format: +92 3XX XXXXXXX or 03XX-XXXXXXX</span>
+            <input id="modal-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" aria-describedby="modal-phone-hint" required>
+            <span class="field-error" id="modal-phone-err" hidden>Please provide a valid contact number.</span>
+          </div>
+
+          <div class="field-group">
+            <label for="modal-email">Work Email <span aria-hidden="true">*</span></label>
+            <input id="modal-email" name="email" type="email" inputmode="email" autocomplete="email" autocorrect="off" autocapitalize="none" spellcheck="false" required>
+            <span class="field-error" id="modal-email-err" hidden>Please enter a valid work email address.</span>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="modal-service">Primary Engineering Practice <span aria-hidden="true">*</span></label>
+          <select id="modal-service" name="service" required>
+            <option value="" disabled selected>Select an EHS or engineering practice…</option>
+            <option value="ehs-audits">EHS Audits &amp; Safety / Fire Gap Assessments</option>
+            <option value="ehs-systems">EHS Management Systems (ISO 45001/14001) &amp; Trainings</option>
+            <option value="wastewater">Wastewater Treatment (ETP/STP) &amp; Water Recycling Plant</option>
+            <option value="fire-suppression">Fire Hydrant &amp; Automatic Fire Suppression System</option>
+            <option value="fire-detection">Fire Detection &amp; Addressable Alarm System</option>
+            <option value="fire-investigation">Fire Incident Investigation &amp; Origin/Cause Forensics</option>
+          </select>
+          <span class="field-error" id="modal-service-err" hidden>Please select the practice area you need.</span>
+        </div>
+
+        <div class="field-group">
+          <label for="modal-scope">Site Location, Industrial Zone &amp; Brief</label>
+          <span class="field-hint" id="modal-scope-hint">Include estate/city (e.g., Korangi, SITE, Port Qasim) and capacity or urgency.</span>
+          <textarea id="modal-scope" name="scope" rows="3" aria-describedby="modal-scope-hint"></textarea>
+        </div>
+
+        <div class="rmc-dialog-actions">
+          <button type="submit" class="btn btn--primary">Submit Consultation Brief</button>
+          <a class="btn btn--ghost" href="tel:+923169043273">Urgent? Call 0316-9043273</a>
+        </div>
+
+        <div class="form-status" role="status" aria-live="polite" hidden></div>
+      </form>
+    </div>
+  </dialog>
+</body>
+</html>

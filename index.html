@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>For All EHS Solutions | Risk Management Consultants (RMC)</title>
+  <meta name="description" content="Risk Management Consultants (RMC), Saddar Karachi (est. 2016): EHS audits, ISO 45001/14001 systems, wastewater treatment &amp; water recycling plants (ETP/STP), NFPA fire protection systems, and NFPA 921 fire forensics across Pakistan.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="expect" href="#main-content" blocking="render">
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/home.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a class="site-logo" href="index.html" aria-label="Risk Management Consultants (RMC) — Home">
+        <svg class="rmc-mark" width="38" height="38" viewBox="0 0 40 40" aria-hidden="true">
+          <rect x="1" y="1" width="38" height="38" rx="4" fill="#FFFFFF" stroke="#0F223D" stroke-width="1.5"/>
+          <!-- Interlocking Chevron-Diamond Emblem (Navy + Safety Amber/Gold) -->
+          <polygon points="20,6 32,16 27,16 20,10.5 13,16 8,16" fill="#0F223D"/>
+          <polygon points="20,13 29,20 24,20 20,16.8 16,20 11,20" fill="#E88D14"/>
+          <polygon points="20,34 32,24 27,24 20,29.5 13,24 8,24" fill="#0F223D"/>
+          <polygon points="20,27 29,20 24,20 20,23.2 16,20 11,20" fill="#F5A623"/>
+        </svg>
+        <span class="site-logo-text">
+          <strong class="site-logo-abbr">RMC</strong>
+          <span class="site-logo-sub">Risk Management Consultants</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <button
+          class="menu-button"
+          type="button"
+          popovertarget="site-menu"
+          popovertargetaction="toggle"
+          aria-controls="site-menu"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+          <span>Menu</span>
+        </button>
+
+        <ul id="site-menu" class="site-menu" popover="auto">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="about.html">About RMC</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="site-menu-cta">
+            <button
+              type="button"
+              class="btn btn--primary btn--sm"
+              command="show-modal"
+              commandfor="consultation-modal"
+              data-open-consultation
+            >
+              Request EHS Audit
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Band 1: Executive Hero + Interactive Pakistan Industrial Risk Pulse Matrix -->
+    <section class="band band--navy" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="stack-md">
+          <p class="eyebrow">Karachi HQ · Founded 2016 · For All EHS Solutions</p>
+          <h1 id="hero-title" class="display-title">
+            Engineering Safer Facilities. <span class="serif-accent">Protecting Every Shift.</span>
+          </h1>
+          <p class="lead">
+            Specialist Environment, Health &amp; Safety (EHS) audits and ISO systems, turnkey wastewater treatment and
+            water recycling plants (ETP/STP), NFPA-compliant fire hydrant, detection, and suppression networks, and
+            scientific NFPA 921 fire incident investigations across Pakistan.
+          </p>
+          <div class="hero-actions">
+            <button
+              type="button"
+              class="btn btn--primary"
+              command="show-modal"
+              commandfor="consultation-modal"
+              data-open-consultation
+            >
+              Request EHS Site Audit
+            </button>
+            <a class="btn btn--secondary" href="#risk-diagnostic">Launch Readiness Diagnostic</a>
+          </div>
+          <ul class="tagline-strip" aria-label="RMC Operating Mandates">
+            <li>Safer Today | Stronger Tomorrow</li>
+            <li>Assess. Improve. Stay Ahead.</li>
+            <li>Find the Cause. Prevent the Next.</li>
+          </ul>
+        </div>
+
+        <aside id="risk-pulse-matrix" class="pulse-matrix" aria-labelledby="pulse-matrix-title">
+          <div class="pulse-header">
+            <div>
+              <p class="eyebrow" id="pulse-matrix-title">Pakistan Industrial Risk Pulse Matrix</p>
+            </div>
+            <span id="pulse-status-badge" class="badge badge--amber">SEQS &amp; NFPA Priority</span>
+          </div>
+
+          <div class="pulse-tabs" role="tablist" aria-label="Industrial sector risk profiles">
+            <button
+              type="button"
+              class="pulse-tab"
+              role="tab"
+              id="pulse-tab-textile"
+              aria-selected="true"
+              data-sector="textile"
+              tabindex="0"
+            >
+              Textile &amp; Dyeing
+            </button>
+            <button
+              type="button"
+              class="pulse-tab"
+              role="tab"
+              id="pulse-tab-pharma"
+              aria-selected="false"
+              data-sector="pharma"
+              tabindex="-1"
+            >
+              Pharma &amp; Chemical
+            </button>
+            <button
+              type="button"
+              class="pulse-tab"
+              role="tab"
+              id="pulse-tab-highrise"
+              aria-selected="false"
+              data-sector="highrise"
+              tabindex="-1"
+            >
+              High-Rise &amp; Commercial
+            </button>
+            <button
+              type="button"
+              class="pulse-tab"
+              role="tab"
+              id="pulse-tab-warehouse"
+              aria-selected="false"
+              data-sector="warehouse"
+              tabindex="-1"
+            >
+              Warehousing &amp; Logistics
+            </button>
+          </div>
+
+          <div id="risk-pulse-panel" class="pulse-panel" role="tabpanel" aria-labelledby="pulse-tab-textile" aria-live="polite">
+            <dl class="pulse-grid">
+              <div class="pulse-item">
+                <dt class="pulse-label">Primary Fire Mandate</dt>
+                <dd id="pulse-fire" class="pulse-value" data-pulse-field="fire">
+                  NFPA 13/24 Hydrant Ring + Addressable FACP &amp; Lint-Zone Detection
+                </dd>
+              </div>
+              <div class="pulse-item">
+                <dt class="pulse-label">Effluent / SEQS Target</dt>
+                <dd id="pulse-effluent" class="pulse-value" data-pulse-field="effluent">
+                  BOD &le; 80 mg/L · COD &le; 150 mg/L · 60% UF/RO Process Water Reuse
+                </dd>
+              </div>
+              <div class="pulse-item">
+                <dt class="pulse-label">Core Legal Anchor</dt>
+                <dd id="pulse-legal" class="pulse-value" data-pulse-field="legal">
+                  Sindh OSH Act 2017 · SEPA 2014 / SEQS · BCP Fire Safety Provisions 2016
+                </dd>
+              </div>
+              <div class="pulse-item">
+                <dt class="pulse-label">Critical Failure Vector</dt>
+                <dd id="pulse-vector" class="pulse-value" data-pulse-field="vector">
+                  Unmonitored arc ignition in lint/dryer zones &amp; ETP shock-load bypass
+                </dd>
+              </div>
+              <div class="pulse-item">
+                <dt class="pulse-label">RMC Engineering Control</dt>
+                <dd id="pulse-control" class="pulse-value" data-pulse-field="control">
+                  MBBR + UF/RO closed-loop ETP retrofit paired with zoned NFPA 72/20 fire loop
+                </dd>
+              </div>
+            </dl>
+
+            <div class="pulse-footer">
+              <span id="pulse-corridor" class="text-mono badge badge--navy" data-pulse-field="corridor">
+                S.I.T.E. · Korangi · Landhi · Faisalabad
+              </span>
+              <button
+                type="button"
+                id="pulse-scope-cta"
+                class="btn btn--primary btn--sm"
+                command="show-modal"
+                commandfor="consultation-modal"
+                data-open-consultation
+                data-service-prefill="wastewater"
+                data-scope-prefill="Sector Focus: Textile &amp; Dyeing — ETP &amp; UF/RO Water Recycling + NFPA 13/24 Fire Ring &amp; Addressable FACP"
+              >
+                Scope This Solution <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Band 2: Institutional Proof & Telemetry Strip -->
+    <section class="band band--surface band--compact" aria-label="Institutional Credentials">
+      <div class="container">
+        <div class="metric-strip">
+          <div class="metric-item">
+            <span class="metric-value">2016</span>
+            <span class="metric-label">Established in Karachi</span>
+            <span class="metric-note">Self-Owned Specialist Practice (2–10 Engineers)</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">6</span>
+            <span class="metric-label">Integrated Disciplines</span>
+            <span class="metric-note">EHS · ISO Systems · WWTP/ETP · Hydrants · FACP · Forensics</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">SEQS / NFPA / ISO</span>
+            <span class="metric-label">Dual Code Alignment</span>
+            <span class="metric-note">Sindh OSH Act 2017 · BCP 2016 · SEPA Rules</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">3 Direct Lines</span>
+            <span class="metric-label">Karachi Rapid Advisory</span>
+            <span class="metric-note text-mono">
+              <a href="tel:+923169043273">0316-9043273</a> ·
+              <a href="tel:+923169043272">0316-9043272</a> ·
+              <a href="tel:+923233963928">0323-3963928</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Band 3: 6 Core Practice Areas (CSS Subgrid + Container Queries) -->
+    <section class="band band--tinted" aria-labelledby="practices-title">
+      <div class="container">
+        <div class="section-header--split">
+          <div class="stack-sm">
+            <p class="eyebrow">01–06 Core Engineering Practices</p>
+            <h2 id="practices-title">Six Integrated EHS, Water &amp; Fire Engineering Practices</h2>
+          </div>
+          <div class="stack-sm">
+            <p>
+              RMC bridges statutory EHS advisory, civil and electromechanical plant construction, ongoing O&amp;M, and
+              scientific fire forensics under one accountable engineering bench.
+            </p>
+            <div>
+              <a class="card-link" href="services.html">Compare Full Practice Specifications &amp; Standards Matrix <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-grid">
+          <!-- Practice 01 -->
+          <div class="card-shell">
+            <article class="practice-card">
+              <div class="card-top">
+                <span class="index-num">01</span>
+                <span class="badge badge--navy">Audits &amp; Gap Studies</span>
+              </div>
+              <h3>EHS Audits &amp; Safety / Fire Gap Assessments</h3>
+              <div class="card-body">
+                <p>
+                  Baseline site walkdowns, egress &amp; fire-load reviews, electrical hazard inspections, and prioritized
+                  CAPA matrices before regulatory or export-buyer inspections.
+                </p>
+                <ul class="tag-list" aria-label="Standards for EHS Audits">
+                  <li><span class="badge">Sindh OSH Act 2017</span></li>
+                  <li><span class="badge">BCP 2016</span></li>
+                  <li><span class="badge">BSCI / WRAP</span></li>
+                </ul>
+              </div>
+              <footer class="card-footer">
+                <a class="card-link" href="services.html#ehs-audits">Explore EHS Audits <span aria-hidden="true">&rarr;</span></a>
+                <button
+                  type="button"
+                  class="btn btn--ghost btn--sm"
+                  command="show-modal"
+                  commandfor="consultation-modal"
+                  data-open-consultation
+                  data-service-prefill="ehs-audits"
+                >
+                  Scope Practice
+                </button>
+              </footer>
+            </article>
+          </div>
+
+          <!-- Practice 02 -->
+          <div class="card-shell">
+            <article class="practice-card">
+              <div class="card-top">
+                <span class="index-num">02</span>
+                <span class="badge badge--navy">Systems &amp; Training</span>
+              </div>
+              <h3>EHS Management Systems &amp; Workforce Trainings</h3>
+              <div class="card-body">
+                <p>
+                  End-to-end EHS system development, HIRA/JSA registers, emergency response manuals, live firefighting &amp;
+                  evacuation drills, and certified floor safety trainings.
+                </p>
+                <ul class="tag-list" aria-label="Standards for EHS Management Systems">
+                  <li><span class="badge">ISO 45001:2018</span></li>
+                  <li><span class="badge">ISO 14001:2015</span></li>
+                  <li><span class="badge">Live Drills</span></li>
+                </ul>
+              </div>
+              <footer class="card-footer">
+                <a class="card-link" href="services.html#ehs-systems-training">Explore EHS Systems <span aria-hidden="true">&rarr;</span></a>
+                <button
+                  type="button"
+                  class="btn btn--ghost btn--sm"
+                  command="show-modal"
+                  commandfor="consultation-modal"
+                  data-open-consultation
+                  data-service-prefill="ehs-systems"
+                >
+                  Scope Practice
+                </button>
+              </footer>
+            </article>
+          </div>
+
+          <!-- Practice 03 -->
+          <div class="card-shell">
+            <article class="practice-card">
+              <div class="card-top">
+                <span class="index-num">03</span>
+                <span class="badge badge--teal">ETP / STP &amp; Reuse</span>
+              </div>
+              <h3>Wastewater Treatment &amp; Water Recycling Plants</h3>
+              <div class="card-body">
+                <p>
+                  Process design, civil &amp; electromechanical construction, commissioning, and ongoing O&amp;M of ETPs,
+                  STPs, and tertiary UF/RO closed-loop water recovery skids.
+                </p>
+                <ul class="tag-list" aria-label="Standards for Wastewater Treatment">
+                  <li><span class="badge">SEPA / SEQS</span></li>
+                  <li><span class="badge">ZDHC</span></li>
+                  <li><span class="badge">UF / RO O&amp;M</span></li>
+                </ul>
+              </div>
+              <footer class="card-footer">
+                <a class="card-link" href="services.html#wastewater-recycling">Explore ETP &amp; Recycling <span aria-hidden="true">&rarr;</span></a>
+                <button
+                  type="button"
+                  class="btn btn--ghost btn--sm"
+                  command="show-modal"
+                  commandfor="consultation-modal"
+                  data-open-consultation
+                  data-service-prefill="wastewater"
+                >
+                  Scope Practice
+                </button>
+              </footer>
+            </article>
+          </div>
+
+          <!-- Practice 04 -->
+          <div class="card-shell">
+            <article class="practice-card">
+              <div class="card-top">
+                <span class="index-num">04</span>
+                <span class="badge badge--amber">Hydraulics &amp; Suppression</span>
+              </div>
+              <h3>Fire Hydrant &amp; Automatic Suppression Systems</h3>
+              <div class="card-body">
+                <p>
+                  Design, fabrication, 12-bar hydrostatic testing, and maintenance of ring mains, NFPA 20 electric/diesel/jockey
+                  pumps, sprinklers, and FM-200/CO&#8322;/foam suppression.
+                </p>
+                <ul class="tag-list" aria-label="Standards for Fire Hydrant and Suppression">
+                  <li><span class="badge">NFPA 13 / 14 / 20 / 24</span></li>
+                  <li><span class="badge">NFPA 2001</span></li>
+                </ul>
+              </div>
+              <footer class="card-footer">
+                <a class="card-link" href="services.html#fire-hydrant-suppression">Explore Fire Suppression <span aria-hidden="true">&rarr;</span></a>
+                <button
+                  type="button"
+                  class="btn btn--ghost btn--sm"
+                  command="show-modal"
+                  commandfor="consultation-modal"
+                  data-open-consultation
+                  data-service-prefill="fire-suppression"
+                >
+                  Scope Practice
+                </button>
+              </footer>
+            </article>
+          </div>
+
+          <!-- Practice 05 -->
+          <div class="card-shell">
+            <article class="practice-card">
+              <div class="card-top">
+                <span class="index-num">05</span>
+                <span class="badge badge--amber">Detection &amp; FACP</span>
+              </div>
+              <h3>Fire Detection &amp; Addressable Alarm Systems</h3>
+              <div class="card-body">
+                <p>
+                  Engineering, supply, installation, and periodic testing of Conventional &amp; Addressable FACPs, optical
+                  smoke and heat detectors, MCPs, sounders, and cause-and-effect matrices.
+                </p>
+                <ul class="tag-list" aria-label="Standards for Fire Detection">
+                  <li><span class="badge">NFPA 72</span></li>
+                  <li><span class="badge">Addressable Loop</span></li>
+                  <li><span class="badge">BCP 2016</span></li>
+                </ul>
+              </div>
+              <footer class="card-footer">
+                <a class="card-link" href="services.html#fire-detection-alarm">Explore Fire Detection <span aria-hidden="true">&rarr;</span></a>
+                <button
+                  type="button"
+                  class="btn btn--ghost btn--sm"
+                  command="show-modal"
+                  commandfor="consultation-modal"
+                  data-open-consultation
+                  data-service-prefill="fire-detection"
+                >
+                  Scope Practice
+                </button>
+              </footer>
+            </article>
+          </div>
+
+          <!-- Practice 06 -->
+          <div class="card-shell">
+            <article class="practice-card">
+              <div class="card-top">
+                <span class="index-num">06</span>
+                <span class="badge badge--danger">Origin &amp; Cause Forensics</span>
+              </div>
+              <h3>Fire Incident Investigation &amp; Origin Forensics</h3>
+              <div class="card-body">
+                <p>
+                  <em>Find the Cause. Prevent the Next.</em> Scientific fire scene documentation, arc mapping beyond generic
+                  &ldquo;short circuit&rdquo; assumptions, evidence logs, and engineering CAPA redesign.
+                </p>
+                <ul class="tag-list" aria-label="Standards for Fire Forensics">
+                  <li><span class="badge">NFPA 921</span></li>
+                  <li><span class="badge">Arc Mapping</span></li>
+                  <li><span class="badge">CAPA Dossier</span></li>
+                </ul>
+              </div>
+              <footer class="card-footer">
+                <a class="card-link" href="services.html#fire-investigation">Explore Fire Forensics <span aria-hidden="true">&rarr;</span></a>
+                <button
+                  type="button"
+                  class="btn btn--ghost btn--sm"
+                  command="show-modal"
+                  commandfor="consultation-modal"
+                  data-open-consultation
+                  data-service-prefill="fire-investigation"
+                >
+                  Scope Practice
+                </button>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Band 4: Interactive Enterprise EHS & Fire Readiness Diagnostic -->
+    <section class="band band--surface" aria-labelledby="diagnostic-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Interactive Engineering Diagnostic</p>
+          <h2 id="diagnostic-title">Enterprise EHS &amp; Fire Readiness Diagnostic</h2>
+          <p>
+            Select your facility profile across five operational controls to compute a live readiness score, statutory code
+            alignment, and top three prioritized engineering actions.
+          </p>
+        </div>
+
+        <div id="risk-diagnostic" class="diagnostic-panel">
+          <form id="risk-diagnostic-form" class="diagnostic-form" aria-labelledby="diagnostic-title">
+            <fieldset class="diagnostic-fieldset">
+              <legend>1. Facility Sector &amp; Risk Class</legend>
+              <div class="choice-list">
+                <label class="choice-option" for="diag-sector-textile">
+                  <input type="radio" id="diag-sector-textile" name="sector" value="textile" checked>
+                  <span>Textile, Dyeing &amp; Export Apparel Mill</span>
+                </label>
+                <label class="choice-option" for="diag-sector-pharma">
+                  <input type="radio" id="diag-sector-pharma" name="sector" value="pharma">
+                  <span>Pharmaceutical, Chemical &amp; Process Plant</span>
+                </label>
+                <label class="choice-option" for="diag-sector-commercial">
+                  <input type="radio" id="diag-sector-commercial" name="sector" value="commercial">
+                  <span>Commercial High-Rise, Hospital &amp; Institutional</span>
+                </label>
+                <label class="choice-option" for="diag-sector-warehouse">
+                  <input type="radio" id="diag-sector-warehouse" name="sector" value="warehouse">
+                  <span>Warehousing, Logistics &amp; Cold-Chain Depot</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="diagnostic-fieldset">
+              <legend>2. Fire Detection &amp; Suppression Status</legend>
+              <div class="choice-list">
+                <label class="choice-option" for="diag-fire-full">
+                  <input type="radio" id="diag-fire-full" name="fire" value="full" data-points="30">
+                  <span>Addressable FACP + Tested Hydrant / Sprinkler Network</span>
+                </label>
+                <label class="choice-option" for="diag-fire-partial">
+                  <input type="radio" id="diag-fire-partial" name="fire" value="partial" data-points="16" checked>
+                  <span>Conventional Panel / Partial Hydrant Coverage</span>
+                </label>
+                <label class="choice-option" for="diag-fire-minimal">
+                  <input type="radio" id="diag-fire-minimal" name="fire" value="minimal" data-points="0">
+                  <span>Portable Extinguishers Only / Unverified Fire Pumps</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="diagnostic-fieldset">
+              <legend>3. Industrial Wastewater / Effluent Handling</legend>
+              <div class="choice-list">
+                <label class="choice-option" for="diag-ww-full">
+                  <input type="radio" id="diag-ww-full" name="wastewater" value="full" data-points="25">
+                  <span>Active ETP/STP + Water Recycling (SEQS Lab Tested)</span>
+                </label>
+                <label class="choice-option" for="diag-ww-partial">
+                  <input type="radio" id="diag-ww-partial" name="wastewater" value="partial" data-points="13" checked>
+                  <span>Primary Treatment Only / Periodic Shock-Load Bypass</span>
+                </label>
+                <label class="choice-option" for="diag-ww-none">
+                  <input type="radio" id="diag-ww-none" name="wastewater" value="none" data-points="0">
+                  <span>No ETP / Direct Municipal or Drain Discharge</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="diagnostic-fieldset">
+              <legend>4. EHS Audit &amp; Workforce Training Cadence</legend>
+              <div class="choice-list">
+                <label class="choice-option" for="diag-ehs-full">
+                  <input type="radio" id="diag-ehs-full" name="ehs" value="full" data-points="25">
+                  <span>Annual ISO 45001 / 14001 Audit + Scheduled Evacuation Drills</span>
+                </label>
+                <label class="choice-option" for="diag-ehs-partial">
+                  <input type="radio" id="diag-ehs-partial" name="ehs" value="partial" data-points="13" checked>
+                  <span>Informal Internal Checklist Only</span>
+                </label>
+                <label class="choice-option" for="diag-ehs-none">
+                  <input type="radio" id="diag-ehs-none" name="ehs" value="none" data-points="0">
+                  <span>Never Formally Audited Against Sindh OSH Act 2017</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="diagnostic-fieldset">
+              <legend>5. Incident &amp; Electrical Preventive Readiness</legend>
+              <div class="choice-list">
+                <label class="choice-option" for="diag-for-full">
+                  <input type="radio" id="diag-for-full" name="forensics" value="full" data-points="20">
+                  <span>Thermal Inspection + Electrical Load Logs + Formal CAPA Register</span>
+                </label>
+                <label class="choice-option" for="diag-for-partial">
+                  <input type="radio" id="diag-for-partial" name="forensics" value="partial" data-points="10" checked>
+                  <span>Basic Breaker Checks / Ad-Hoc Incident Notes</span>
+                </label>
+                <label class="choice-option" for="diag-for-critical">
+                  <input type="radio" id="diag-for-critical" name="forensics" value="critical" data-points="0">
+                  <span>Unresolved Near-Misses or Post-Fire Investigation Needed</span>
+                </label>
+              </div>
+            </fieldset>
+          </form>
+
+          <aside class="diagnostic-output" aria-labelledby="diagnostic-output-heading">
+            <div class="diagnostic-score-box">
+              <div>
+                <p class="eyebrow" id="diagnostic-output-heading">Readiness Score Output</p>
+                <p>
+                  <output id="diagnostic-score" class="diagnostic-score" form="risk-diagnostic-form" aria-live="polite">52</output>
+                  <span class="metric-note text-mono">/ 100</span>
+                </p>
+              </div>
+              <span id="diagnostic-tier" class="diagnostic-tier" data-tier="moderate">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <path d="M12 9v4m0 4h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/>
+                </svg>
+                <span id="diagnostic-tier-label">Moderate Exposure</span>
+              </span>
+            </div>
+
+            <div class="stack-sm">
+              <p id="diagnostic-summary">
+                Partial protection exposes your textile plant to SEPA effluent threshold violations, buyer audit findings,
+                and slow fire-zone isolation during peak shift loads.
+              </p>
+
+              <div class="diagnostic-recs">
+                <h3>Top 3 Engineering Recommendations</h3>
+                <ul id="diagnostic-recommendations">
+                  <li>Upgrade conventional fire alarms to an NFPA 72 addressable FACP and commission perimeter hydrant pressure tests.</li>
+                  <li>Add biological MBBR + tertiary UF/RO polishing to stabilize COD/BOD below SEQS and recover 55–65% process water.</li>
+                  <li>Execute a Sindh OSH Act 2017 &amp; BCP 2016 gap audit with documented HIRA registers and shift evacuation drills.</li>
+                </ul>
+              </div>
+
+              <div class="diagnostic-codes">
+                <h3>Applicable Pakistan &amp; International Codes</h3>
+                <ul id="diagnostic-codes-list" class="tag-list">
+                  <li><span class="badge badge--navy">Sindh OSH Act 2017</span></li>
+                  <li><span class="badge badge--navy">SEPA / SEQS &amp; ZDHC</span></li>
+                  <li><span class="badge badge--amber">BCP Fire Safety 2016</span></li>
+                  <li><span class="badge badge--amber">NFPA 13 / 20 / 72</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="btn-group">
+              <button
+                type="button"
+                id="diagnostic-send-btn"
+                class="btn btn--primary"
+                command="show-modal"
+                commandfor="consultation-modal"
+                data-open-consultation
+                data-service-prefill="ehs-audits"
+                data-scope-prefill="Diagnostic Score: 52/100 (Moderate Exposure) | Sector: Textile, Dyeing &amp; Export Apparel Mill | Priorities: Addressable FACP + Hydrant Testing, ETP UF/RO Water Recycling, Sindh OSH Act 2017 Gap Audit."
+              >
+                Send Diagnostic Summary to RMC Engineers
+              </button>
+              <button type="reset" form="risk-diagnostic-form" id="diagnostic-reset-btn" class="btn btn--ghost btn--sm">
+                Reset Inputs
+              </button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Band 5: Filterable Project Benchmarks (:has() Pure CSS Filter + Live Count) -->
+    <section class="band band--tinted filter-section" aria-labelledby="benchmarks-title">
+      <div class="container">
+        <div class="section-header--split">
+          <div class="stack-sm">
+            <p class="eyebrow">Representative Project Benchmarks</p>
+            <h2 id="benchmarks-title">Karachi &amp; Regional Engineering Case Benchmarks</h2>
+          </div>
+          <div class="stack-sm">
+            <p>
+              Representative sector benchmarks reflecting RMC&apos;s verified Karachi &amp; Sindh scope across S.I.T.E.,
+              Korangi, Landhi, and Nooriabad industrial corridors.
+            </p>
+            <div>
+              <a class="card-link" href="case-studies.html">Open All 6 Forensic &amp; Engineering Dossiers <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-bar">
+          <fieldset class="filter-pills">
+            <legend class="visually-hidden">Filter representative benchmarks by practice area</legend>
+            <input class="visually-hidden" type="radio" id="filter-all" name="home-benchmark-filter" value="all" checked>
+            <label class="filter-pill" for="filter-all">All Benchmarks</label>
+
+            <input class="visually-hidden" type="radio" id="filter-ehs" name="home-benchmark-filter" value="ehs">
+            <label class="filter-pill" for="filter-ehs">EHS &amp; ISO Audits</label>
+
+            <input class="visually-hidden" type="radio" id="filter-etp" name="home-benchmark-filter" value="etp">
+            <label class="filter-pill" for="filter-etp">ETP &amp; Water Recycling</label>
+
+            <input class="visually-hidden" type="radio" id="filter-fire" name="home-benchmark-filter" value="fire">
+            <label class="filter-pill" for="filter-fire">Fire Protection &amp; Alarms</label>
+
+            <input class="visually-hidden" type="radio" id="filter-forensics" name="home-benchmark-filter" value="forensics">
+            <label class="filter-pill" for="filter-forensics">Fire Investigation</label>
+          </fieldset>
+
+          <p id="home-filter-count" class="filter-status" aria-live="polite">Showing 4 of 4 representative benchmarks</p>
+        </div>
+
+        <div id="home-benchmark-grid" class="card-grid">
+          <!-- Benchmark 1: ETP -->
+          <div class="card-shell">
+            <article class="case-card" data-category="etp">
+              <div class="card-top">
+                <span class="badge badge--navy">RMC-CS-01</span>
+                <span class="badge badge--teal">Representative Benchmark</span>
+              </div>
+              <h3>Textile Dye-House Effluent Treatment &amp; 62% Water Recycling Plant</h3>
+              <div class="card-body">
+                <p class="text-mono">S.I.T.E. Industrial Area, Karachi · ETP &amp; UF/RO</p>
+                <p>
+                  High-color dyeing effluent (COD &gt; 1,400 mg/L) stabilized via equalization, physicochemical coagulation,
+                  MBBR biological treatment, and tertiary UF/RO closed-loop recycling with RMC O&amp;M.
+                </p>
+                <dl class="case-metrics">
+                  <div class="case-metric-item">
+                    <dt class="case-metric-label">Treated COD</dt>
+                    <dd class="case-metric-val">&lt; 110 mg/L</dd>
+                  </div>
+                  <div class="case-metric-item">
+                    <dt class="case-metric-label">Water Reuse</dt>
+                    <dd class="case-metric-val">62% Recovery</dd>
+                  </div>
+                </dl>
+              </div>
+              <footer class="card-footer">
+                <a class="card-link" href="case-studies.html#RMC-CS-01">Inspect RMC-CS-01 Dossier <span aria-hidden="true">&rarr;</span></a>
+              </footer>
+            </article>
+          </div>
+
+          <!-- Benchmark 2: Fire Protection & Alarms -->
+          <div class="card-shell">
+            <article class="case-card" data-category="fire">
+              <div class="card-top">
+                <span class="badge badge--navy">RMC-CS-02</span>
+                <span class="badge badge--amber">Representative Benchmark</span>
+              </div>
+              <h3>Pharmaceutical Plant Addressable FACP &amp; Clean-Agent Suppression</h3>
+              <div class="card-body">
+                <p class="text-mono">Korangi Industrial Area, Karachi · NFPA 72 / 2001</p>
+                <p>
+                  Replaced nuisance-prone conventional loops with multi-loop NFPA 72 addressable detection, dual optical/heat
+                  sensors, manual call points, and FM-200 automatic suppression in solvent and server rooms.
+                </p>
+                <dl class="case-metrics">
+                  <div class="case-metric-item">
+                    <dt class="case-metric-label">Zone Isolation</dt>
+                    <dd class="case-metric-val">&lt; 5 sec</dd>
+                  </div>
+                  <div class="case-metric-item">
+                    <dt class="case-metric-label">Suppression</dt>
+                    <dd class="case-metric-val">FM-200 Ready</dd>
+                  </div>
+                </dl>
+              </div>
+              <footer class="card-footer">
+                <a class="card-link" href="case-studies.html#RMC-CS-02">Inspect RMC-CS-02 Dossier <span aria-hidden="true">&rarr;</span></a>
+              </footer>
+            </article>
+          </div>
+
+          <!-- Benchmark 3: EHS & ISO Audits -->
+          <div class="card-shell">
+            <article class="case-card" data-category="ehs">
+              <div class="card-top">
+                <span class="badge badge--navy">RMC-CS-03</span>
+                <span class="badge badge--teal">Representative Benchmark</span>
+              </div>
+              <h3>Export Knitwear EHS &amp; Fire Gap Audit + ISO 45001 System Rollout</h3>
+              <div class="card-body">
+                <p class="text-mono">Landhi Industrial Area, Karachi · ISO 45001 / BSCI</p>
+                <p>
+                  Closed critical buyer audit findings across egress routes, chemical storage labeling, HIRA registers, and
+                  delivered 6 hands-on firefighting and floor evacuation training batches.
+                </p>
+                <dl class="case-metrics">
+                  <div class="case-metric-item">
+                    <dt class="case-metric-label">CAPA Closure</dt>
+                    <dd class="case-metric-val">100% Verified</dd>
+                  </div>
+                  <div class="case-metric-item">
+                    <dt class="case-metric-label">Drills</dt>
+                    <dd class="case-metric-val">6 Batches</dd>
+                  </div>
+                </dl>
+              </div>
+              <footer class="card-footer">
+                <a class="card-link" href="case-studies.html#RMC-CS-03">Inspect RMC-CS-03 Dossier <span aria-hidden="true">&rarr;</span></a>
+              </footer>
+            </article>
+          </div>
+
+          <!-- Benchmark 4: Fire Investigation -->
+          <div class="card-shell">
+            <article class="case-card" data-category="forensics">
+              <div class="card-top">
+                <span class="badge badge--navy">RMC-CS-06</span>
+                <span class="badge badge--danger">Representative Benchmark</span>
+              </div>
+              <h3>Manufacturing Unit Fire Scene Investigation &amp; CAPA Redesign</h3>
+              <div class="card-body">
+                <p class="text-mono">Nooriabad Industrial Corridor · NFPA 921</p>
+                <p>
+                  Disproved premature &ldquo;short circuit&rdquo; assumptions via systematic NFPA 921 arc mapping and burn-pattern
+                  analysis, isolating the true heat-source origin and delivering insurer-grade CAPA controls.
+                </p>
+                <dl class="case-metrics">
+                  <div class="case-metric-item">
+                    <dt class="case-metric-label">Methodology</dt>
+                    <dd class="case-metric-val">NFPA 921</dd>
+                  </div>
+                  <div class="case-metric-item">
+                    <dt class="case-metric-label">Outcome</dt>
+                    <dd class="case-metric-val">Root Cause + CAPA</dd>
+                  </div>
+                </dl>
+              </div>
+              <footer class="card-footer">
+                <a class="card-link" href="case-studies.html#RMC-CS-06">Inspect RMC-CS-06 Dossier <span aria-hidden="true">&rarr;</span></a>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Band 6: 4-Stage Engineering Methodology & Code Standards -->
+    <section class="band band--navy" aria-labelledby="methodology-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Assess. Improve. Stay Ahead.</p>
+          <h2 id="methodology-title">Four-Stage Industrial Execution Methodology</h2>
+          <p class="lead">
+            We move plants from statutory vulnerability to engineered resilience—combining gap diagnostics, detailed
+            hydraulic and process design, turnkey execution, and long-term O&amp;M.
+          </p>
+        </div>
+
+        <ol class="methodology-steps scroll-reveal">
+          <li class="step-card">
+            <span class="index-num">01</span>
+            <h3>Audit &amp; Gap Analysis</h3>
+            <p>
+              On-site hazard survey, effluent grab sampling, hydraulic loop inspection, and legal gap matrix against Sindh
+              OSH Act 2017, SEQS, and BCP 2016.
+            </p>
+          </li>
+          <li class="step-card">
+            <span class="index-num">02</span>
+            <h3>Process &amp; Hydraulic Design</h3>
+            <p>
+              P&amp;ID schematics, ETP mass balance, UF/RO recovery sizing, NFPA 13/20 pump curves, addressable FACP zoning,
+              and transparent itemized BOQs.
+            </p>
+          </li>
+          <li class="step-card">
+            <span class="index-num">03</span>
+            <h3>Turnkey Build &amp; Commissioning</h3>
+            <p>
+              Civil works, pipework, electromechanical fabrication, 12-bar hydrostatic tests, SEPA-approved lab verification,
+              and live alarm/suppression sign-off.
+            </p>
+          </li>
+          <li class="step-card">
+            <span class="index-num">04</span>
+            <h3>O&amp;M, Training &amp; Forensic Readiness</h3>
+            <p>
+              Scheduled ETP &amp; fire-loop maintenance contracts, workforce safety training drills, and rapid NFPA 921
+              origin/cause investigation when incidents strike.
+            </p>
+          </li>
+        </ol>
+
+        <ul class="standards-strip" aria-label="Aligned Codes and Standards">
+          <li><span class="badge badge--navy">ISO 45001:2018</span></li>
+          <li><span class="badge badge--navy">ISO 14001:2015</span></li>
+          <li><span class="badge badge--amber">NFPA 13 / 20 / 72 / 921</span></li>
+          <li><span class="badge badge--amber">BCP Fire Safety Provisions 2016</span></li>
+          <li><span class="badge badge--teal">SEPA / SEQS</span></li>
+          <li><span class="badge badge--teal">Sindh OSH Act 2017</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Band 7: Technical Briefings & Field Notes -->
+    <section class="band band--surface" aria-labelledby="briefings-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Technical Briefings &amp; Field Notes</p>
+          <h2 id="briefings-title">Engineering Insights for Industrial &amp; Facility Leaders</h2>
+          <p>
+            Field guidance from RMC&apos;s Karachi practice addressing recurring forensic, environmental, and fire-hydraulic
+            failures across Pakistani facilities.
+          </p>
+        </div>
+
+        <div class="grid-3 scroll-reveal">
+          <article class="briefing-card stack-sm">
+            <div class="card-top">
+              <span class="badge badge--danger">Fire Forensics · NFPA 921</span>
+              <span class="index-num">FN-01</span>
+            </div>
+            <h3>Beyond &ldquo;Short Circuit&rdquo;: Scientific Arc Mapping Under NFPA 921 in Industrial Fire Investigations</h3>
+            <p>
+              <em>Find the Cause. Prevent the Next.</em> How systematic fire-pattern documentation and electrical arc mapping
+              distinguish primary ignition faults from secondary fire-melted wiring—protecting claim clarity and future shifts.
+            </p>
+            <footer class="card-footer">
+              <a class="card-link" href="services.html#fire-investigation">Review Fire Forensics Protocol <span aria-hidden="true">&rarr;</span></a>
+            </footer>
+          </article>
+
+          <article class="briefing-card stack-sm">
+            <div class="card-top">
+              <span class="badge badge--teal">Wastewater · SEQS / ZDHC</span>
+              <span class="index-num">FN-02</span>
+            </div>
+            <h3>Textile &amp; Pharma SEQS Compliance: Retrofitting Biological ETPs for Closed-Loop Water Recycling</h3>
+            <p>
+              Pairing equalization and physicochemical dosing with MBBR biology and tertiary UF/RO skids brings high-COD
+              effluent below SEPA limits while reclaiming 50–65% process water.
+            </p>
+            <footer class="card-footer">
+              <a class="card-link" href="services.html#wastewater-recycling">Review ETP &amp; Recycling Design <span aria-hidden="true">&rarr;</span></a>
+            </footer>
+          </article>
+
+          <article class="briefing-card stack-sm">
+            <div class="card-top">
+              <span class="badge badge--amber">Fire Hydraulics · BCP 2016</span>
+              <span class="index-num">FN-03</span>
+            </div>
+            <h3>Why Fire Hydrant Loops Fail Under Load: Pump Sizing &amp; Jockey Maintenance Under BCP 2016</h3>
+            <p>
+              Undersized suction headers, stalled diesel backups, and uncalibrated jockey cut-in bands cause pressure collapse
+              when hydrants open. Scheduled NFPA 20 flow testing prevents silent system failure.
+            </p>
+            <footer class="card-footer">
+              <a class="card-link" href="services.html#fire-hydrant-suppression">Review Hydrant &amp; Pump Specs <span aria-hidden="true">&rarr;</span></a>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Band 8: Exclusive FAQ Accordion (<details name="rmc-faq">, no headings inside <summary>) -->
+    <section class="band band--tinted" aria-labelledby="home-faq-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Engineering &amp; Compliance FAQ</p>
+          <h2 id="home-faq-title">Practical Answers Before Commissioning or Inspection</h2>
+          <p>
+            Clear operational guidance on how RMC structures audits, turnkey construction, ongoing O&amp;M, and urgent
+            post-incident deployments.
+          </p>
+        </div>
+
+        <div class="accordion-group">
+          <details name="rmc-faq" open>
+            <summary>What happens during an RMC EHS &amp; Fire Safety Gap Assessment?</summary>
+            <div class="accordion-body">
+              <p>
+                RMC engineers conduct a physical walkthrough covering egress widths, fire loads, hydrant pressure and FACP
+                zoning, chemical storage, electrical panels, and wastewater discharge points. You receive a photographic
+                non-conformity register mapped to the Sindh OSH Act 2017, Building Code of Pakistan 2016, NFPA codes, and
+                export buyer standards with prioritized corrective actions (CAPA).
+              </p>
+            </div>
+          </details>
+
+          <details name="rmc-faq">
+            <summary>Does RMC handle both ETP/Water Recycling construction and ongoing O&amp;M?</summary>
+            <div class="accordion-body">
+              <p>
+                Yes. RMC manages the entire wastewater lifecycle—process engineering, civil basins, mechanical and dosing
+                installation, commissioning against SEPA SEQS parameters, tertiary UF/RO water recycling integration, and
+                continuous daily plant operation &amp; maintenance (O&amp;M) with operator training.
+              </p>
+            </div>
+          </details>
+
+          <details name="rmc-faq">
+            <summary>Are your fire hydrant, detection, and suppression designs aligned with Building Code of Pakistan 2016 &amp; NFPA?</summary>
+            <div class="accordion-body">
+              <p>
+                All hydraulic calculations, pump room layouts (electric, diesel, jockey), ring mains, addressable fire alarm
+                control panels (FACP), and clean-agent/CO&#8322;/foam systems are engineered strictly to Building Code of
+                Pakistan (Fire Safety Provisions 2016) alongside NFPA 13, 14, 20, 24, 72, and 2001.
+              </p>
+            </div>
+          </details>
+
+          <details name="rmc-faq">
+            <summary>How quickly can RMC mobilize for a post-fire incident investigation in Karachi or Sindh?</summary>
+            <div class="accordion-body">
+              <p>
+                From our Saddar, Karachi headquarters, our investigation specialist can mobilize within 24–48 hours across
+                Karachi industrial zones, Nooriabad, Hub, and Hyderabad, and rapidly nationwide. Call
+                <a href="tel:+923169043273">0316-9043273</a> immediately so scene preservation and NFPA 921 arc mapping
+                begin before debris clearance destroys physical origin evidence.
+              </p>
+            </div>
+          </details>
+
+          <details name="rmc-faq">
+            <summary>Which industries and zones does RMC serve from Saddar, Karachi?</summary>
+            <div class="accordion-body">
+              <p>
+                From Office M-1, Fareed Chambers on Abdullah Haroon Road, Saddar, RMC directly serves S.I.T.E., Korangi
+                Industrial Area, Korangi Creek Industrial Park (KCIP), Landhi, Port Qasim / BQIP, Federal B. Area,
+                Nooriabad, and Hub—as well as textile, pharma, commercial, and logistics plants nationwide across Pakistan.
+              </p>
+            </div>
+          </details>
+
+          <details name="rmc-faq">
+            <summary>Can RMC help prepare our facility for SEPA compliance, Civil Defence NOC, or export buyer audits (ZDHC / BSCI)?</summary>
+            <div class="accordion-body">
+              <p>
+                Yes. We close both engineering hardware gaps (ETP upgrades, operable hydrants, addressable detectors, signage)
+                and documentation gaps (ISO 45001/14001 manuals, HIRA logs, evacuation drill records, SEPA-approved lab
+                reports) required for SEPA monitoring, SBCA/Civil Defence NOCs, and buyer audits including ZDHC, amfori
+                BSCI, and WRAP.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Band 9: Pre-Footer Engineering Consultation Callout -->
+    <section class="band band--navy" aria-labelledby="prefooter-title">
+      <div class="container asymmetric-grid">
+        <div class="stack-sm">
+          <p class="eyebrow">For All EHS Solutions · Safer Today | Stronger Tomorrow</p>
+          <h2 id="prefooter-title">Ready to Close Compliance Gaps or Build Resilient Plant Systems?</h2>
+          <p class="lead">
+            Connect directly with RMC&apos;s engineering desk in Saddar, Karachi for site gap audits, ETP construction &amp;
+            O&amp;M, NFPA fire protection builds, or urgent fire forensics.
+          </p>
+        </div>
+
+        <div class="stack-md">
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn--primary"
+              command="show-modal"
+              commandfor="consultation-modal"
+              data-open-consultation
+            >
+              Schedule Engineering Consultation
+            </button>
+            <a class="btn btn--secondary" href="contact.html">Open RFP Form &amp; HQ Directory</a>
+          </div>
+          <p class="text-mono">
+            Direct Lines:
+            <a href="tel:+923169043273">0316-9043273</a> ·
+            <a href="tel:+923169043272">0316-9043272</a> ·
+            <a href="tel:+923233963928">0323-3963928</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer band band--navy">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-title">Risk Management Consultants (RMC)</p>
+          <p class="footer-tagline">For All EHS Solutions — <em>Safer Today | Stronger Tomorrow</em></p>
+          <p class="footer-desc">
+            Established in 2016 in Karachi, Pakistan. Delivering EHS audits, management systems,
+            wastewater treatment &amp; recycling plants, turnkey fire protection systems, and forensic fire investigations.
+          </p>
+        </div>
+
+        <nav class="footer-col" aria-label="Engineering Practices">
+          <h2 class="footer-heading">Practices</h2>
+          <ul class="footer-links">
+            <li><a href="services.html#ehs-audits">EHS &amp; Fire Gap Audits</a></li>
+            <li><a href="services.html#ehs-systems-training">EHS Systems &amp; Trainings</a></li>
+            <li><a href="services.html#wastewater-recycling">WWTP / ETP &amp; Water Recycling</a></li>
+            <li><a href="services.html#fire-hydrant-suppression">Fire Hydrant &amp; Suppression</a></li>
+            <li><a href="services.html#fire-detection-alarm">Fire Detection &amp; Alarms</a></li>
+            <li><a href="services.html#fire-investigation">Fire Incident Investigation</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Company Navigation">
+          <h2 class="footer-heading">Company</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Executive Overview</a></li>
+            <li><a href="case-studies.html">Project Benchmarks</a></li>
+            <li><a href="about.html">About &amp; Governance</a></li>
+            <li><a href="contact.html">Request Site Survey / RFP</a></li>
+            <li><a href="https://pk.linkedin.com/company/risk-management-consultants-rmc" target="_blank" rel="noopener noreferrer">LinkedIn Company Profile</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Karachi Headquarters</h2>
+          <address class="footer-address">
+            Office M-1, Fareed Chambers<br>
+            Abdullah Haroon Road, Saddar<br>
+            Karachi, Sindh 74400, Pakistan
+          </address>
+          <ul class="footer-phones">
+            <li><a href="tel:+923169043273">0316-9043273</a></li>
+            <li><a href="tel:+923169043272">0316-9043272</a></li>
+            <li><a href="tel:+923233963928">0323-3963928</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Risk Management Consultants (RMC). All rights reserved.</p>
+        <p class="footer-standards">Aligned with ISO 45001 · ISO 14001 · NFPA 13/20/72/921 · BCP Fire Safety Provisions 2016 · SEPA / SEQS</p>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="consultation-modal" class="rmc-dialog" closedby="any" aria-labelledby="consultation-modal-title">
+    <div class="rmc-dialog-shell">
+      <div class="rmc-dialog-header">
+        <div>
+          <p class="eyebrow">Karachi HQ · Nationwide Dispatch</p>
+          <h2 id="consultation-modal-title">Schedule an Engineering &amp; EHS Consultation</h2>
+        </div>
+        <form method="dialog">
+          <button type="submit" value="close" class="btn-icon" aria-label="Close consultation dialog">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M18 6 6 18M6 6l12 12"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <form id="consultation-modal-form" class="rmc-form" method="post" action="contact.html#submitted" novalidate>
+        <div class="rmc-form-grid">
+          <div class="field-group">
+            <label for="modal-name">Full Name <span aria-hidden="true">*</span></label>
+            <input id="modal-name" name="name" type="text" autocomplete="name" required autofocus>
+            <span class="field-error" id="modal-name-err" hidden>Please enter your full name.</span>
+          </div>
+
+          <div class="field-group">
+            <label for="modal-company">Organization / Facility <span aria-hidden="true">*</span></label>
+            <input id="modal-company" name="company" type="text" autocomplete="organization" required>
+            <span class="field-error" id="modal-company-err" hidden>Please enter your company or plant name.</span>
+          </div>
+
+          <div class="field-group">
+            <label for="modal-phone">Phone / WhatsApp <span aria-hidden="true">*</span></label>
+            <span class="field-hint" id="modal-phone-hint">Format: +92 3XX XXXXXXX or 03XX-XXXXXXX</span>
+            <input id="modal-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" aria-describedby="modal-phone-hint" required>
+            <span class="field-error" id="modal-phone-err" hidden>Please provide a valid contact number.</span>
+          </div>
+
+          <div class="field-group">
+            <label for="modal-email">Work Email <span aria-hidden="true">*</span></label>
+            <input id="modal-email" name="email" type="email" inputmode="email" autocomplete="email" autocorrect="off" autocapitalize="none" spellcheck="false" required>
+            <span class="field-error" id="modal-email-err" hidden>Please enter a valid work email address.</span>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="modal-service">Primary Engineering Practice <span aria-hidden="true">*</span></label>
+          <select id="modal-service" name="service" required>
+            <option value="" disabled selected>Select an EHS or engineering practice…</option>
+            <option value="ehs-audits">EHS Audits &amp; Safety / Fire Gap Assessments</option>
+            <option value="ehs-systems">EHS Management Systems (ISO 45001/14001) &amp; Trainings</option>
+            <option value="wastewater">Wastewater Treatment (ETP/STP) &amp; Water Recycling Plant</option>
+            <option value="fire-suppression">Fire Hydrant &amp; Automatic Fire Suppression System</option>
+            <option value="fire-detection">Fire Detection &amp; Addressable Alarm System</option>
+            <option value="fire-investigation">Fire Incident Investigation &amp; Origin/Cause Forensics</option>
+          </select>
+          <span class="field-error" id="modal-service-err" hidden>Please select the practice area you need.</span>
+        </div>
+
+        <div class="field-group">
+          <label for="modal-scope">Site Location, Industrial Zone &amp; Brief</label>
+          <span class="field-hint" id="modal-scope-hint">Include estate/city (e.g., Korangi, SITE, Port Qasim) and capacity or urgency.</span>
+          <textarea id="modal-scope" name="scope" rows="3" aria-describedby="modal-scope-hint"></textarea>
+        </div>
+
+        <div class="rmc-dialog-actions">
+          <button type="submit" class="btn btn--primary">Submit Consultation Brief</button>
+          <a class="btn btn--ghost" href="tel:+923169043273">Urgent? Call 0316-9043273</a>
+        </div>
+
+        <div class="form-status" role="status" aria-live="polite" hidden></div>
+      </form>
+    </div>
+  </dialog>
+</body>
+</html>

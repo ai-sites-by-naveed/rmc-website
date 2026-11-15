@@ -1,0 +1,192 @@
+@layer theme {
+  :root {
+    color-scheme: light dark;
+
+    /* Tier 1: Brand & Surface Raw Light/Dark Primitives (oklch) */
+    --rmc-navy-950-light: oklch(0.18 0.045 256);
+    --rmc-navy-950-dark: oklch(0.13 0.035 256);
+    --rmc-navy-800-light: oklch(0.27 0.062 254);
+    --rmc-navy-800-dark: oklch(0.22 0.052 254);
+
+    --rmc-amber-500-light: oklch(0.75 0.165 68);
+    --rmc-amber-500-dark: oklch(0.78 0.160 70);
+    --rmc-amber-ink-light: oklch(0.47 0.145 55);
+    --rmc-amber-ink-dark: oklch(0.82 0.150 72);
+
+    /* Hi-Vis signal strictly reserved for --rmc-navy-950 / --rmc-navy-800 surfaces (>11:1) */
+    --rmc-hivis-400: oklch(0.90 0.185 108);
+
+    --rmc-teal-600-light: oklch(0.46 0.115 170);
+    --rmc-teal-600-dark: oklch(0.74 0.125 170);
+
+    --surface-page-light: oklch(0.985 0.004 250);
+    --surface-page-dark: oklch(0.155 0.028 256);
+    --surface-card-light: oklch(1.0 0 0);
+    --surface-card-dark: oklch(0.205 0.035 256);
+    --surface-tinted-light: oklch(0.955 0.010 250);
+    --surface-tinted-dark: oklch(0.180 0.032 256);
+
+    --ink-primary-light: oklch(0.20 0.042 256);
+    --ink-primary-dark: oklch(0.955 0.006 250);
+    --ink-secondary-light: oklch(0.42 0.032 254);
+    --ink-secondary-dark: oklch(0.79 0.018 252);
+
+    --border-hairline-light: oklch(0.87 0.015 252);
+    --border-hairline-dark: oklch(0.32 0.035 254);
+    --border-strong-light: oklch(0.56 0.035 254);
+    --border-strong-dark: oklch(0.58 0.030 252);
+
+    --status-success-light: oklch(0.46 0.125 162);
+    --status-success-dark: oklch(0.74 0.135 162);
+    --status-warn-light: oklch(0.52 0.155 60);
+    --status-warn-dark: oklch(0.80 0.155 72);
+    --status-danger-light: oklch(0.50 0.195 27);
+    --status-danger-dark: oklch(0.72 0.180 25);
+
+    --ink-on-amber: oklch(0.18 0.045 256);
+    --ink-on-navy: oklch(0.96 0.005 250);
+    --ink-on-navy-muted: oklch(0.80 0.018 252);
+    --ink-on-teal-light: oklch(0.99 0 0);
+    --ink-on-teal-dark: oklch(0.14 0.03 256);
+
+    /* Tier 2: Semantic Color Tokens (Baseline Widely available light default) */
+    --rmc-navy-950: var(--rmc-navy-950-light);
+    --rmc-navy-800: var(--rmc-navy-800-light);
+    --rmc-amber-500: var(--rmc-amber-500-light);
+    --rmc-amber-ink: var(--rmc-amber-ink-light);
+    --rmc-teal-600: var(--rmc-teal-600-light);
+
+    --surface-page: var(--surface-page-light);
+    --surface-card: var(--surface-card-light);
+    --surface-tinted: var(--surface-tinted-light);
+
+    --ink-primary: var(--ink-primary-light);
+    --ink-secondary: var(--ink-secondary-light);
+    --ink-on-teal: var(--ink-on-teal-light);
+
+    --border-hairline: var(--border-hairline-light);
+    --border-strong: var(--border-strong-light);
+
+    --status-success: var(--status-success-light);
+    --status-warn: var(--status-warn-light);
+    --status-danger: var(--status-danger-light);
+
+    /* Tier 3: Derived UI & Color-Mix Tints/Shades */
+    --surface-header: color-mix(in oklab, var(--surface-page) 92%, transparent);
+    --surface-elevated: color-mix(in oklab, var(--surface-card) 94%, var(--surface-tinted));
+    --brand-navy-tint: color-mix(in oklab, var(--rmc-navy-800) 9%, var(--surface-page));
+    --brand-navy-hover: color-mix(in oklab, var(--rmc-navy-800) 84%, black);
+    --amber-fill-hover: color-mix(in oklab, var(--rmc-amber-500) 86%, var(--rmc-navy-950));
+    --amber-tint: color-mix(in oklab, var(--rmc-amber-500) 14%, var(--surface-card));
+    --teal-tint: color-mix(in oklab, var(--rmc-teal-600) 12%, var(--surface-card));
+    --teal-hover: color-mix(in oklab, var(--rmc-teal-600) 86%, black);
+    --status-success-bg: color-mix(in oklab, var(--status-success) 13%, var(--surface-card));
+    --status-warn-bg: color-mix(in oklab, var(--status-warn) 14%, var(--surface-card));
+    --status-danger-bg: color-mix(in oklab, var(--status-danger) 12%, var(--surface-card));
+    --backdrop-scrim: color-mix(in oklab, var(--rmc-navy-950) 68%, transparent);
+
+    --focus-ring: var(--rmc-amber-ink);
+    --scrollbar-track: var(--surface-tinted);
+    --scrollbar-thumb: var(--border-strong);
+
+    --shadow-subtle: 0 1px 2px color-mix(in oklab, var(--rmc-navy-950) 8%, transparent);
+    --shadow-overlay: 0 20px 44px -12px color-mix(in oklab, var(--rmc-navy-950) 28%, transparent);
+
+    /* Typography Stacks & Fluid Clamp Scale (max <= 2.5 * min) */
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-serif: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+
+    --text-display: clamp(2.25rem, 1.55rem + 2.6vw, 3.85rem);
+    --text-h1: clamp(1.95rem, 1.4rem + 2vw, 3.1rem);
+    --text-h2: clamp(1.5rem, 1.2rem + 1.2vw, 2.25rem);
+    --text-h3: clamp(1.18rem, 1.05rem + 0.5vw, 1.45rem);
+    --text-body-lg: clamp(1.05rem, 1rem + 0.25vw, 1.2rem);
+    --text-body: 1rem;
+    --text-sm: 0.9375rem;
+    --text-mono-sm: 0.875rem;
+    --text-xs: 0.8125rem;
+
+    --leading-tight: 1.08;
+    --leading-heading: 1.18;
+    --leading-snug: 1.32;
+    --leading-body: 1.6;
+
+    /* Layout, Spacing & Sharp Swiss Radii */
+    --container-max: 80rem;
+    --container-gutter: clamp(1rem, 4vw, 2.5rem);
+    --band-pad: clamp(3.5rem, 2.2rem + 4vw, 6.5rem);
+    --header-offset: 5.5rem;
+
+    --space-2xs: 0.25rem;
+    --space-xs: 0.5rem;
+    --space-s: 0.75rem;
+    --space-m: 1rem;
+    --space-l: 1.5rem;
+    --space-xl: 2.25rem;
+    --space-2xl: 3.5rem;
+
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-pill: 999px;
+
+    --transition-fast: 150ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    --transition-base: 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+
+    accent-color: var(--rmc-amber-ink);
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  }
+
+  /* Fallback for browsers without light-dark() */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --rmc-navy-950: var(--rmc-navy-950-dark);
+      --rmc-navy-800: var(--rmc-navy-800-dark);
+      --rmc-amber-500: var(--rmc-amber-500-dark);
+      --rmc-amber-ink: var(--rmc-amber-ink-dark);
+      --rmc-teal-600: var(--rmc-teal-600-dark);
+
+      --surface-page: var(--surface-page-dark);
+      --surface-card: var(--surface-card-dark);
+      --surface-tinted: var(--surface-tinted-dark);
+
+      --ink-primary: var(--ink-primary-dark);
+      --ink-secondary: var(--ink-secondary-dark);
+      --ink-on-teal: var(--ink-on-teal-dark);
+
+      --border-hairline: var(--border-hairline-dark);
+      --border-strong: var(--border-strong-dark);
+
+      --status-success: var(--status-success-dark);
+      --status-warn: var(--status-warn-dark);
+      --status-danger: var(--status-danger-dark);
+    }
+  }
+
+  /* Progressive enhancement: reactive light-dark() tokens (never registered with @property) */
+  @supports (color: light-dark(white, black)) {
+    :root {
+      --rmc-navy-950: light-dark(var(--rmc-navy-950-light), var(--rmc-navy-950-dark));
+      --rmc-navy-800: light-dark(var(--rmc-navy-800-light), var(--rmc-navy-800-dark));
+      --rmc-amber-500: light-dark(var(--rmc-amber-500-light), var(--rmc-amber-500-dark));
+      --rmc-amber-ink: light-dark(var(--rmc-amber-ink-light), var(--rmc-amber-ink-dark));
+      --rmc-teal-600: light-dark(var(--rmc-teal-600-light), var(--rmc-teal-600-dark));
+
+      --surface-page: light-dark(var(--surface-page-light), var(--surface-page-dark));
+      --surface-card: light-dark(var(--surface-card-light), var(--surface-card-dark));
+      --surface-tinted: light-dark(var(--surface-tinted-light), var(--surface-tinted-dark));
+
+      --ink-primary: light-dark(var(--ink-primary-light), var(--ink-primary-dark));
+      --ink-secondary: light-dark(var(--ink-secondary-light), var(--ink-secondary-dark));
+      --ink-on-teal: light-dark(var(--ink-on-teal-light), var(--ink-on-teal-dark));
+
+      --border-hairline: light-dark(var(--border-hairline-light), var(--border-hairline-dark));
+      --border-strong: light-dark(var(--border-strong-light), var(--border-strong-dark));
+
+      --status-success: light-dark(var(--status-success-light), var(--status-success-dark));
+      --status-warn: light-dark(var(--status-warn-light), var(--status-warn-dark));
+      --status-danger: light-dark(var(--status-danger-light), var(--status-danger-dark));
+    }
+  }
+}

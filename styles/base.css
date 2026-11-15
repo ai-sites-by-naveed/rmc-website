@@ -1,0 +1,226 @@
+@layer reset {
+  :where(*) {
+    box-sizing: border-box;
+  }
+
+  :where(*)::before,
+  :where(*)::after {
+    box-sizing: border-box;
+  }
+
+  :where(html) {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  :where(body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul, ol) {
+    margin: 0;
+  }
+
+  :where(ul[class], ol[class], nav ul, nav ol) {
+    list-style: none;
+    padding-inline-start: 0;
+  }
+
+  :where(ul, ol):not([class]) {
+    padding-inline-start: 1.25rem;
+  }
+
+  :where(img, picture, svg, video, canvas) {
+    display: block;
+    max-inline-size: 100%;
+  }
+
+  :where(img, svg) {
+    block-size: auto;
+  }
+
+  :where(button, input, select, textarea) {
+    font: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+  }
+
+  :where(a) {
+    color: inherit;
+  }
+
+  :where(fieldset) {
+    margin: 0;
+    padding: 0;
+    min-inline-size: 0;
+    border: 0;
+  }
+
+  :where(search) {
+    display: block;
+  }
+
+  :where(table) {
+    border-collapse: collapse;
+  }
+}
+
+@layer base {
+  html {
+    scroll-padding-block-start: var(--header-offset, 5.5rem);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    min-block-size: 100dvh;
+    background-color: var(--surface-page);
+    color: var(--ink-primary);
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    font-size-adjust: from-font;
+    line-height: var(--leading-body);
+    text-align: start;
+    overflow-wrap: break-word;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    line-height: var(--leading-heading);
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    color: var(--ink-primary);
+  }
+
+  h1 {
+    font-size: var(--text-h1);
+    line-height: var(--leading-tight);
+  }
+
+  h2 {
+    font-size: var(--text-h2);
+  }
+
+  h3 {
+    font-size: var(--text-h3);
+    line-height: var(--leading-snug);
+  }
+
+  h4 {
+    font-size: 1.0625rem;
+    line-height: var(--leading-snug);
+  }
+
+  .display-title {
+    font-size: var(--text-display);
+    line-height: var(--leading-tight);
+    letter-spacing: -0.025em;
+  }
+
+  .serif-accent {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size-adjust: from-font;
+  }
+
+  p,
+  li,
+  blockquote {
+    text-wrap: pretty;
+    max-inline-size: 60ch;
+  }
+
+  .lead {
+    font-size: var(--text-body-lg);
+    color: var(--ink-secondary);
+  }
+
+  blockquote {
+    border-inline-start: 3px solid var(--rmc-amber-ink);
+    padding-inline-start: var(--space-m);
+    color: var(--ink-secondary);
+  }
+
+  code,
+  kbd,
+  samp,
+  pre,
+  .font-mono {
+    font-family: var(--font-mono);
+    font-size-adjust: from-font;
+    font-variant-numeric: tabular-nums;
+  }
+
+  [data-tabular],
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  a {
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 0.2em;
+  }
+
+  :where(a:not([class])) {
+    color: var(--rmc-amber-ink);
+  }
+
+  :where(a:not([class])):hover {
+    color: var(--ink-primary);
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 2px;
+  }
+
+  [hidden] {
+    display: none;
+  }
+
+  .skip-link {
+    position: fixed;
+    inset-block-start: -12rem;
+    inset-inline-start: var(--space-m);
+    z-index: 100;
+    display: inline-flex;
+    align-items: center;
+    min-block-size: 48px;
+    padding: 0.75rem 1.25rem;
+    border: 2px solid var(--rmc-navy-950);
+    border-radius: var(--radius-sm);
+    background-color: var(--rmc-amber-500);
+    color: var(--ink-on-amber);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .skip-link:focus-visible {
+    inset-block-start: var(--space-m);
+  }
+
+  .visually-hidden {
+    position: absolute;
+    clip-path: inset(50%);
+    overflow: hidden;
+    inline-size: 1px;
+    block-size: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+}

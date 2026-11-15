@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 44" width="272" height="44" role="img" aria-label="Risk Management Consultants (RMC) — For All EHS Solutions">
+  <title>Risk Management Consultants (RMC)</title>
+  <style>
+    .rmc-wordmark-abbr {
+      fill: #0F223D;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    .rmc-wordmark-sub {
+      fill: #3E4C63;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    @media (prefers-color-scheme: dark) {
+      .rmc-wordmark-abbr { fill: #F4F6FA; }
+      .rmc-wordmark-sub { fill: #B7C2D4; }
+    }
+  </style>
+  <g transform="translate(2 2)">
+    <rect x="1" y="1" width="38" height="38" rx="4" fill="#FFFFFF" stroke="#0F223D" stroke-width="1.5"/>
+    <polygon points="20,6 32,16 27,16 20,10.5 13,16 8,16" fill="#0F223D"/>
+    <polygon points="20,13 29,20 24,20 20,16.8 16,20 11,20" fill="#E88D14"/>
+    <polygon points="20,34 32,24 27,24 20,29.5 13,24 8,24" fill="#0F223D"/>
+    <polygon points="20,27 29,20 24,20 20,23.2 16,20 11,20" fill="#F5A623"/>
+  </g>
+  <text x="52" y="21" class="rmc-wordmark-abbr">RMC</text>
+  <text x="52" y="36" class="rmc-wordmark-sub">Risk Management Consultants</text>
+</svg>
