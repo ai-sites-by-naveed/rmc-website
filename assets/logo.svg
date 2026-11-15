@@ -1,32 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 44" width="272" height="44" role="img" aria-label="Risk Management Consultants (RMC) — For All EHS Solutions">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 44" width="280" height="44" role="img" aria-label="Risk Management Consultants (RMC) — For All EHS Solutions">
   <title>Risk Management Consultants (RMC)</title>
   <style>
-    .rmc-wordmark-abbr {
-      fill: #0F223D;
+    .rmc-wordmark-top {
+      fill: #F57B00;
       font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
       font-size: 18px;
       font-weight: 700;
-      letter-spacing: 0.04em;
+      letter-spacing: -0.01em;
     }
-    .rmc-wordmark-sub {
-      fill: #3E4C63;
-      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
-      font-size: 11px;
+    .rmc-wordmark-bottom {
+      fill: #1E256F;
+      font-family: 'JetBrains Mono', 'Courier New', ui-monospace, monospace;
+      font-size: 14.5px;
       font-weight: 600;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.14em;
     }
     @media (prefers-color-scheme: dark) {
-      .rmc-wordmark-abbr { fill: #F4F6FA; }
-      .rmc-wordmark-sub { fill: #B7C2D4; }
+      .rmc-wordmark-top { fill: #FF9436; }
+      .rmc-wordmark-bottom { fill: #F3F5FA; }
     }
   </style>
   <g transform="translate(2 2)">
-    <rect x="1" y="1" width="38" height="38" rx="4" fill="#FFFFFF" stroke="#0F223D" stroke-width="1.5"/>
-    <polygon points="20,6 32,16 27,16 20,10.5 13,16 8,16" fill="#0F223D"/>
-    <polygon points="20,13 29,20 24,20 20,16.8 16,20 11,20" fill="#E88D14"/>
-    <polygon points="20,34 32,24 27,24 20,29.5 13,24 8,24" fill="#0F223D"/>
-    <polygon points="20,27 29,20 24,20 20,23.2 16,20 11,20" fill="#F5A623"/>
+    <rect x="1" y="1" width="38" height="38" rx="5" fill="#FFFFFF" stroke="#1E256F" stroke-width="1.25"/>
+    <path d="M20 3.2 L24.4 7.6 Q25.6 8.8 25.6 10.6 L25.6 14.2 L20 8.6 L14.4 14.2 L14.4 10.6 Q14.4 8.8 15.6 7.6 Z" fill="#F57B00"/>
+    <path d="M20 13.4 L24.4 17.8 Q25.6 19.0 25.6 20.8 L25.6 24.4 L20 18.8 L14.4 24.4 L14.4 20.8 Q14.4 19.0 15.6 17.8 Z" fill="#F57B00"/>
+    <path d="M3.2 20 L7.6 15.6 Q8.8 14.4 10.6 14.4 L14.0 14.4 L8.4 20 L14.0 25.6 L10.6 25.6 Q8.8 25.6 7.6 24.4 Z" fill="#1E256F"/>
+    <path d="M36.8 20 L32.4 15.6 Q31.2 14.4 29.4 14.4 L26.0 14.4 L31.6 20 L26.0 25.6 L29.4 25.6 Q31.2 25.6 32.4 24.4 Z" fill="#1E256F"/>
+    <path d="M20 36.8 L24.4 32.4 Q25.6 31.2 25.6 29.4 L25.6 25.6 L20 31.2 L14.4 25.6 L14.4 29.4 Q14.4 31.2 15.6 32.4 Z" fill="#1E256F"/>
   </g>
-  <text x="52" y="21" class="rmc-wordmark-abbr">RMC</text>
-  <text x="52" y="36" class="rmc-wordmark-sub">Risk Management Consultants</text>
+  <text x="52" y="20" class="rmc-wordmark-top">Risk Management</text>
+  <text x="52" y="36" class="rmc-wordmark-bottom">Consultants</text>
 </svg>

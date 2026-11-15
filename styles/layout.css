@@ -31,15 +31,26 @@
   .band--navy {
     color-scheme: dark;
     background-color: var(--rmc-navy-950);
-    color: oklch(0.96 0.005 250);
+    background-image:
+      radial-gradient(
+        110% 90% at 15% 10%,
+        color-mix(in oklab, var(--rmc-navy-800) 65%, transparent) 0%,
+        transparent 70%
+      ),
+      linear-gradient(
+        135deg,
+        var(--rmc-navy-950) 0%,
+        color-mix(in oklab, var(--rmc-navy-800) 55%, var(--rmc-navy-950)) 100%
+      );
+    color: var(--ink-on-navy);
     accent-color: var(--rmc-amber-500);
     border-block-end: 1px solid var(--border-hairline-dark);
 
-    --surface-page: var(--rmc-navy-950-dark);
+    --surface-page: var(--rmc-navy-950);
     --surface-card: var(--rmc-navy-800);
-    --surface-tinted: var(--rmc-navy-800-dark);
-    --ink-primary: oklch(0.96 0.005 250);
-    --ink-secondary: var(--ink-secondary-dark);
+    --surface-tinted: color-mix(in oklab, var(--rmc-navy-950) 78%, black);
+    --ink-primary: var(--ink-on-navy);
+    --ink-secondary: var(--ink-on-navy-muted);
     --ink-on-teal: var(--ink-on-teal-dark);
     --border-hairline: var(--border-hairline-dark);
     --border-strong: var(--border-strong-dark);
@@ -50,12 +61,12 @@
     --status-danger: var(--status-danger-dark);
     --focus-ring: var(--rmc-hivis-400);
 
-    --brand-navy-tint: color-mix(in oklab, var(--rmc-navy-800-dark) 55%, var(--rmc-navy-950-dark));
-    --amber-tint: color-mix(in oklab, var(--rmc-amber-500-dark) 16%, var(--rmc-navy-800-dark));
-    --teal-tint: color-mix(in oklab, var(--rmc-teal-600-dark) 16%, var(--rmc-navy-800-dark));
-    --status-success-bg: color-mix(in oklab, var(--status-success-dark) 18%, var(--rmc-navy-800-dark));
-    --status-warn-bg: color-mix(in oklab, var(--status-warn-dark) 18%, var(--rmc-navy-800-dark));
-    --status-danger-bg: color-mix(in oklab, var(--status-danger-dark) 18%, var(--rmc-navy-800-dark));
+    --brand-navy-tint: color-mix(in oklab, var(--rmc-navy-800) 60%, var(--rmc-navy-950));
+    --amber-tint: color-mix(in oklab, var(--rmc-amber-500-dark) 18%, var(--rmc-navy-800));
+    --teal-tint: color-mix(in oklab, var(--rmc-teal-600-dark) 18%, var(--rmc-navy-800));
+    --status-success-bg: color-mix(in oklab, var(--status-success-dark) 18%, var(--rmc-navy-800));
+    --status-warn-bg: color-mix(in oklab, var(--status-warn-dark) 18%, var(--rmc-navy-800));
+    --status-danger-bg: color-mix(in oklab, var(--status-danger-dark) 18%, var(--rmc-navy-800));
   }
 
   .band--navy .lead {
@@ -135,26 +146,30 @@
 
   .rmc-mark {
     flex-shrink: 0;
-    inline-size: 2.375rem;
-    block-size: 2.375rem;
+    inline-size: 2.5rem;
+    block-size: 2.5rem;
   }
 
   .site-logo-text {
     display: grid;
-    line-height: 1.15;
+    line-height: 1.12;
   }
 
   .site-logo-abbr {
+    font-family: var(--font-sans);
     font-size: 1.0625rem;
     font-weight: 700;
-    letter-spacing: 0.04em;
-    color: var(--ink-primary);
+    letter-spacing: -0.015em;
+    color: var(--rmc-amber-ink);
+    white-space: nowrap;
   }
 
   .site-logo-sub {
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--ink-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    color: var(--ink-primary);
     white-space: nowrap;
   }
 
@@ -506,7 +521,7 @@
   .footer-tagline {
     font-family: var(--font-serif);
     font-size: 1.25rem;
-    color: var(--rmc-amber-500);
+    color: var(--rmc-hivis-400);
     margin-block-end: var(--space-s);
   }
 
@@ -556,7 +571,7 @@
     font-family: var(--font-mono);
     font-variant-numeric: tabular-nums;
     font-weight: 600;
-    color: var(--rmc-amber-500);
+    color: var(--rmc-hivis-400);
   }
 
   .footer-address {

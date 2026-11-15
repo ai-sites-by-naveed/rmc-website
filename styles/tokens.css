@@ -3,51 +3,52 @@
     color-scheme: light dark;
 
     /* Tier 1: Brand & Surface Raw Light/Dark Primitives (oklch) */
-    --rmc-navy-950-light: oklch(0.18 0.045 256);
-    --rmc-navy-950-dark: oklch(0.13 0.035 256);
-    --rmc-navy-800-light: oklch(0.27 0.062 254);
-    --rmc-navy-800-dark: oklch(0.22 0.052 254);
+    --rmc-navy-950-light: oklch(0.33 0.122 267);
+    --rmc-navy-950-dark: oklch(0.25 0.102 267);
+    --rmc-navy-800-light: oklch(0.40 0.130 265);
+    --rmc-navy-800-dark: oklch(0.31 0.112 266);
 
-    --rmc-amber-500-light: oklch(0.75 0.165 68);
-    --rmc-amber-500-dark: oklch(0.78 0.160 70);
-    --rmc-amber-ink-light: oklch(0.47 0.145 55);
-    --rmc-amber-ink-dark: oklch(0.82 0.150 72);
+    /* Official RMC Vibrant Brand Orange (replacing yellowish amber) */
+    --rmc-amber-500-light: oklch(0.70 0.192 47);
+    --rmc-amber-500-dark: oklch(0.73 0.185 49);
+    --rmc-amber-ink-light: oklch(0.53 0.175 44);
+    --rmc-amber-ink-dark: oklch(0.80 0.155 52);
 
-    /* Hi-Vis signal strictly reserved for --rmc-navy-950 / --rmc-navy-800 surfaces (>11:1) */
-    --rmc-hivis-400: oklch(0.90 0.185 108);
+    /* Warm luminous Brand Orange accent for Royal Blue (--rmc-navy-950 / --rmc-navy-800) surfaces */
+    --rmc-hivis-400: oklch(0.82 0.150 52);
 
     --rmc-teal-600-light: oklch(0.46 0.115 170);
     --rmc-teal-600-dark: oklch(0.74 0.125 170);
 
-    --surface-page-light: oklch(0.985 0.004 250);
-    --surface-page-dark: oklch(0.155 0.028 256);
+    --surface-page-light: oklch(0.985 0.005 264);
+    --surface-page-dark: oklch(0.17 0.045 267);
     --surface-card-light: oklch(1.0 0 0);
-    --surface-card-dark: oklch(0.205 0.035 256);
-    --surface-tinted-light: oklch(0.955 0.010 250);
-    --surface-tinted-dark: oklch(0.180 0.032 256);
+    --surface-card-dark: oklch(0.22 0.055 267);
+    --surface-tinted-light: oklch(0.955 0.012 264);
+    --surface-tinted-dark: oklch(0.195 0.050 267);
 
-    --ink-primary-light: oklch(0.20 0.042 256);
-    --ink-primary-dark: oklch(0.955 0.006 250);
-    --ink-secondary-light: oklch(0.42 0.032 254);
-    --ink-secondary-dark: oklch(0.79 0.018 252);
+    --ink-primary-light: oklch(0.22 0.085 267);
+    --ink-primary-dark: oklch(0.96 0.006 260);
+    --ink-secondary-light: oklch(0.42 0.050 265);
+    --ink-secondary-dark: oklch(0.82 0.022 262);
 
-    --border-hairline-light: oklch(0.87 0.015 252);
-    --border-hairline-dark: oklch(0.32 0.035 254);
-    --border-strong-light: oklch(0.56 0.035 254);
-    --border-strong-dark: oklch(0.58 0.030 252);
+    --border-hairline-light: oklch(0.86 0.020 264);
+    --border-hairline-dark: oklch(0.44 0.085 265);
+    --border-strong-light: oklch(0.55 0.050 265);
+    --border-strong-dark: oklch(0.62 0.080 262);
 
     --status-success-light: oklch(0.46 0.125 162);
     --status-success-dark: oklch(0.74 0.135 162);
-    --status-warn-light: oklch(0.52 0.155 60);
-    --status-warn-dark: oklch(0.80 0.155 72);
+    --status-warn-light: oklch(0.52 0.175 45);
+    --status-warn-dark: oklch(0.80 0.155 50);
     --status-danger-light: oklch(0.50 0.195 27);
     --status-danger-dark: oklch(0.72 0.180 25);
 
-    --ink-on-amber: oklch(0.18 0.045 256);
-    --ink-on-navy: oklch(0.96 0.005 250);
-    --ink-on-navy-muted: oklch(0.80 0.018 252);
+    --ink-on-amber: oklch(0.16 0.055 267);
+    --ink-on-navy: oklch(0.97 0.005 260);
+    --ink-on-navy-muted: oklch(0.86 0.020 260);
     --ink-on-teal-light: oklch(0.99 0 0);
-    --ink-on-teal-dark: oklch(0.14 0.03 256);
+    --ink-on-teal-dark: oklch(0.15 0.04 267);
 
     /* Tier 2: Semantic Color Tokens (Baseline Widely available light default) */
     --rmc-navy-950: var(--rmc-navy-950-light);
@@ -77,11 +78,11 @@
     --brand-navy-tint: color-mix(in oklab, var(--rmc-navy-800) 9%, var(--surface-page));
     --brand-navy-hover: color-mix(in oklab, var(--rmc-navy-800) 84%, black);
     --amber-fill-hover: color-mix(in oklab, var(--rmc-amber-500) 86%, var(--rmc-navy-950));
-    --amber-tint: color-mix(in oklab, var(--rmc-amber-500) 14%, var(--surface-card));
+    --amber-tint: color-mix(in oklab, var(--rmc-amber-500) 12%, var(--surface-card));
     --teal-tint: color-mix(in oklab, var(--rmc-teal-600) 12%, var(--surface-card));
     --teal-hover: color-mix(in oklab, var(--rmc-teal-600) 86%, black);
     --status-success-bg: color-mix(in oklab, var(--status-success) 13%, var(--surface-card));
-    --status-warn-bg: color-mix(in oklab, var(--status-warn) 14%, var(--surface-card));
+    --status-warn-bg: color-mix(in oklab, var(--status-warn) 13%, var(--surface-card));
     --status-danger-bg: color-mix(in oklab, var(--status-danger) 12%, var(--surface-card));
     --backdrop-scrim: color-mix(in oklab, var(--rmc-navy-950) 68%, transparent);
 
@@ -138,7 +139,7 @@
     scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
   }
 
-  /* Fallback for browsers without light-dark() */
+  /* Page-level Dark Mode (keeps .band--navy lighter on light pages and deeper on dark pages) */
   @media (prefers-color-scheme: dark) {
     :root {
       --rmc-navy-950: var(--rmc-navy-950-dark);
@@ -167,8 +168,6 @@
   /* Progressive enhancement: reactive light-dark() tokens (never registered with @property) */
   @supports (color: light-dark(white, black)) {
     :root {
-      --rmc-navy-950: light-dark(var(--rmc-navy-950-light), var(--rmc-navy-950-dark));
-      --rmc-navy-800: light-dark(var(--rmc-navy-800-light), var(--rmc-navy-800-dark));
       --rmc-amber-500: light-dark(var(--rmc-amber-500-light), var(--rmc-amber-500-dark));
       --rmc-amber-ink: light-dark(var(--rmc-amber-ink-light), var(--rmc-amber-ink-dark));
       --rmc-teal-600: light-dark(var(--rmc-teal-600-light), var(--rmc-teal-600-dark));
